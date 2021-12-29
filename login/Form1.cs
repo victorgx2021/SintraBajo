@@ -37,5 +37,16 @@ namespace login
                 pantalla.Show();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Registrar pantalla = new Registrar();
+            pantalla.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
