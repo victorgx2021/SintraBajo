@@ -1,0 +1,4 @@
+./login/bin
+./login/obj
+.vs/
+login.sln
