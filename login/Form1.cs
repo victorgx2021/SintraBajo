@@ -20,25 +20,37 @@ namespace login
 
 
         //SqlConnection coneccion = new SqlConnection("server=DESKTOP-AGNSDTC/SQLEXPRESS ; database = bdAdmision ; INTEGRATED SECURITY = true");
-
+       
         SqlConnection coneccion = new SqlConnection("Data Source = localhost\\SQLEXPRESS; Initial Catalog = bdAdmision; Integrated Security = true ");
         private void btn_Click(object sender, EventArgs e)
         {
-            coneccion.Open();
-            SqlCommand comando = new SqlCommand("SELECT DNIpostulante, Contraseña FROM POSTULANTE WHERE DNIpostulante = @vusuario AND PWDCOMPARE( @Vcontrasena, Contraseña)=1;", coneccion);
-            comando.Parameters.AddWithValue("@vusuario",txt1.Text);
-            comando.Parameters.AddWithValue("@Vcontrasena", txt2.Text);
-
-            SqlDataReader lector = comando.ExecuteReader();
-
-            if(lector.Read())
+            try
             {
-                coneccion.Close();
-                Home pantalla=new Home();
-                pantalla.Show();
+                coneccion.Open();
+                SqlCommand comando = new SqlCommand("SELECT DNIpostulante, Contraseña FROM POSTULANTE WHERE DNIpostulante = @vusuario AND PWDCOMPARE( @Vcontrasena, Contraseña)=1;", coneccion);
+                comando.Parameters.AddWithValue("@vusuario", txt1.Text);
+                comando.Parameters.AddWithValue("@Vcontrasena", txt2.Text);
+
+                SqlDataReader lector = comando.ExecuteReader();
+
+                if (lector.Read())
+                {
+                    coneccion.Close();
+                    Home pantalla = new Home();
+                    pantalla.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Ingrese usuario y contraseña correctos.", "Datos incorrectos");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
             }
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             Registrar pantalla = new Registrar();
