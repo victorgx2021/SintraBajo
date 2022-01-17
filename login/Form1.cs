@@ -24,6 +24,7 @@ namespace login
         SqlConnection coneccion = new SqlConnection("Data Source = localhost\\SQLEXPRESS; Initial Catalog = bdAdmision; Integrated Security = true ");
         private void btn_Click(object sender, EventArgs e)
         {
+            
             if(labeluser.Text == "POSTULANTE")
             {
                 try
@@ -66,7 +67,7 @@ namespace login
                     if (lector.Read())
                     {
                         coneccion.Close();
-                        Home pantalla = new Home();
+                        HomeDigitador pantalla = new HomeDigitador();
                         pantalla.Show();
                     }
                     else

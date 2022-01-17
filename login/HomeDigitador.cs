@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace login
 {
-    public partial class Home : Form
+    public partial class HomeDigitador : Form
     {
-        public Home()
+        public HomeDigitador()
         {
             InitializeComponent();
         }
