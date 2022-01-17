@@ -96,5 +96,15 @@ namespace login
         {
             this.WindowState= FormWindowState.Minimized;
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            if(labeluser.Text=="POSTULANTE")
+            {
+                labeluser.Text = "DIGITADOR";
+
+            }
+            else { labeluser.Text = "POSTULANTE"; }
+        }
     }
 }
