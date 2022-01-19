@@ -24,6 +24,7 @@ namespace login
         SqlConnection coneccion = new SqlConnection("Data Source = localhost\\SQLEXPRESS; Initial Catalog = bdAdmision; Integrated Security = true ");
         private void btn_Click(object sender, EventArgs e)
         {
+            //*
             try
             {
                 coneccion.Open();
@@ -37,7 +38,9 @@ namespace login
                 {
                     coneccion.Close();
                     HomeDigitador pantalla = new HomeDigitador();
-                    pantalla.Show();
+                    //pantalla.Show();
+                    this.Hide();
+                    pantalla.ShowDialog();
                     return;
                 }
 
@@ -60,7 +63,9 @@ namespace login
                 {
                     coneccion.Close();
                     Home pantalla = new Home();
-                    pantalla.Show();
+                    //pantalla.Show();
+                    this.Hide();
+                    pantalla.ShowDialog();
                 }
                 else
                 {
@@ -71,7 +76,7 @@ namespace login
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-            }
+            }//*/
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -87,6 +92,7 @@ namespace login
         private void labelRegistrarse_Click(object sender, EventArgs e)
         {
             Registrar pantalla = new Registrar();
+            this.Hide();
             pantalla.Show();
         }
 

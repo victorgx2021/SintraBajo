@@ -13,40 +13,50 @@ namespace login
 {
     public partial class Registrar : Form
     {
+        private string dni="";
         public Registrar()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
 
         }
+
         SqlConnection coneccion = new SqlConnection("server=DESKTOP-FPQPC13 ; database = bdAdmision ; INTEGRATED SECURITY = true");
+
+        public void setDNI(string Dni)
+        {
+            dni = Dni;
+        }
+        public string getDNI() { return dni; }
+        public void AbrirDatosPersonales()
+        {
+            DatosPersonales frm = new DatosPersonales(this);
+            frm.TopLevel = false;
+            this.paneDatos.Controls.Add(frm);
+            this.paneDatos.Tag = frm;
+            frm.Show();
+        }
         private void button2_Click(object sender, EventArgs e)
         {
-            coneccion.Open();
-            SqlCommand comando = new SqlCommand("SELECT NroRecibo, DNIpostulante FROM Recibo WHERE NroRecibo  = @vNroRecibo AND DNIpostulante = @VDniPostulante", coneccion);
-            comando.Parameters.AddWithValue("@vNroRecibo", txtNroRecibo.Text);
-            comando.Parameters.AddWithValue("@DniPostulante", txtDni.Text);
 
-            SqlDataReader dr = comando.ExecuteReader();
-            int contador = 0;
-            while (dr.Read())
-            {
-                contador++;
-            }
-            dr.Close();
+        }
 
-            if (contador == 1)
-            {
-    
-            }
-            else
-            {
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(getDNI());
+            Close();
+        }
 
-            }
+        private void Registrar_Load(object sender, EventArgs e)
+        {
+            VerificarRecibo frm = new VerificarRecibo(this);
+            frm.TopLevel = false;
+            this.paneDatos.Controls.Add(frm);
+            this.paneDatos.Tag = frm;
+            frm.Show();
+        }
 
+        private void Registrar_FormClosed(object sender, FormClosedEventArgs e)
+        {
 
         }
     }

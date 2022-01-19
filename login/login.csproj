@@ -48,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="Registro\DatosPersonales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro\DatosPersonales.Designer.cs">
+      <DependentUpon>DatosPersonales.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,15 @@
     <Compile Include="Registrar.Designer.cs">
       <DependentUpon>Registrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Registro\VerificarRecibo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro\VerificarRecibo.Designer.cs">
+      <DependentUpon>VerificarRecibo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Registro\DatosPersonales.resx">
+      <DependentUpon>DatosPersonales.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +110,9 @@
     </Compile>
     <EmbeddedResource Include="Registrar.resx">
       <DependentUpon>Registrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro\VerificarRecibo.resx">
+      <DependentUpon>VerificarRecibo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
