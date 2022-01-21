@@ -41,6 +41,7 @@ namespace login
                     //pantalla.Show();
                     this.Hide();
                     pantalla.ShowDialog();
+                    this.Show();
                     return;
                 }
 
@@ -48,6 +49,7 @@ namespace login
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+
             }
 
             try
@@ -66,6 +68,7 @@ namespace login
                     //pantalla.Show();
                     this.Hide();
                     pantalla.ShowDialog();
+                    this.Show();
                 }
                 else
                 {
@@ -93,7 +96,8 @@ namespace login
         {
             Registrar pantalla = new Registrar();
             this.Hide();
-            pantalla.Show();
+            pantalla.ShowDialog();
+            this.Show();
         }
 
         private void labelRegistrarse_MouseMove(object sender, MouseEventArgs e)

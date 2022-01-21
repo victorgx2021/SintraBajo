@@ -14,9 +14,11 @@ namespace login
     public partial class Registrar : Form
     {
         private string dni="";
+        
         public Registrar()
         {
             InitializeComponent();
+      
 
         }
 
@@ -42,7 +44,7 @@ namespace login
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(getDNI());
+            
             Close();
         }
 
@@ -56,6 +58,11 @@ namespace login
         }
 
         private void Registrar_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
+        }
+
+        private void paneDatos_Paint(object sender, PaintEventArgs e)
         {
 
         }

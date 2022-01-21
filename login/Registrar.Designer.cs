@@ -117,6 +117,7 @@
             this.paneDatos.Name = "paneDatos";
             this.paneDatos.Size = new System.Drawing.Size(396, 256);
             this.paneDatos.TabIndex = 11;
+            this.paneDatos.Paint += new System.Windows.Forms.PaintEventHandler(this.paneDatos_Paint);
             // 
             // Registrar
             // 
