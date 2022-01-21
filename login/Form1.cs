@@ -24,6 +24,34 @@ namespace login
         SqlConnection coneccion = new SqlConnection("Data Source = localhost\\SQLEXPRESS; Initial Catalog = bdAdmision; Integrated Security = true ");
         private void btn_Click(object sender, EventArgs e)
         {
+            //*
+            try
+            {
+                coneccion.Open();
+                SqlCommand comando = new SqlCommand("SELECT DNIdigitador, Contraseña FROM DIGITADOR_UNSAAC WHERE DNIdigitador = @vusuario AND PWDCOMPARE( @Vcontrasena, Contraseña)=1;", coneccion);
+                comando.Parameters.AddWithValue("@vusuario", txt1.Text);
+                comando.Parameters.AddWithValue("@Vcontrasena", txt2.Text);
+
+                SqlDataReader lector = comando.ExecuteReader();
+
+                if (lector.Read())
+                {
+                    coneccion.Close();
+                    HomeDigitador pantalla = new HomeDigitador();
+                    //pantalla.Show();
+                    this.Hide();
+                    pantalla.ShowDialog();
+                    this.Show();
+                    return;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+
+            }
+
             try
             {
                 coneccion.Open();
@@ -37,7 +65,10 @@ namespace login
                 {
                     coneccion.Close();
                     Home pantalla = new Home();
-                    pantalla.Show();
+                    //pantalla.Show();
+                    this.Hide();
+                    pantalla.ShowDialog();
+                    this.Show();
                 }
                 else
                 {
@@ -48,43 +79,7 @@ namespace login
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-            }
-        }
-        
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Registrar pantalla = new Registrar();
-            pantalla.Show();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
+            }//*/
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -95,6 +90,24 @@ namespace login
         private void BtnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState= FormWindowState.Minimized;
+        }
+
+        private void labelRegistrarse_Click(object sender, EventArgs e)
+        {
+            Registrar pantalla = new Registrar();
+            this.Hide();
+            pantalla.ShowDialog();
+            this.Show();
+        }
+
+        private void labelRegistrarse_MouseMove(object sender, MouseEventArgs e)
+        {
+            labelRegistrarse.Font = new Font(labelRegistrarse.Font.Name, labelRegistrarse.Font.Size, FontStyle.Bold | FontStyle.Underline);
+        }
+
+        private void labelRegistrarse_MouseLeave(object sender, EventArgs e)
+        {
+            labelRegistrarse.Font = new Font(labelRegistrarse.Font.Name, labelRegistrarse.Font.Size, FontStyle.Bold);
         }
     }
 }
