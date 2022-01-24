@@ -25,10 +25,11 @@ namespace login
         private void btn_Click(object sender, EventArgs e)
         {
             //*
+            
             try
             {
                 coneccion.Open();
-                SqlCommand comando = new SqlCommand("SELECT DNIdigitador, Contraseña FROM DIGITADOR_UNSAAC WHERE DNIdigitador = @vusuario AND PWDCOMPARE( @Vcontrasena, Contraseña)=1;", coneccion);
+                SqlCommand comando = new SqlCommand("SELECT DNIdigitador, Contraseña, Nombres, ApellidoPaterno, ApellidoMaterno  FROM DIGITADOR_UNSAAC WHERE DNIdigitador = @vusuario AND PWDCOMPARE( @Vcontrasena, Contraseña)=1;", coneccion);
                 comando.Parameters.AddWithValue("@vusuario", txt1.Text);
                 comando.Parameters.AddWithValue("@Vcontrasena", txt2.Text);
 
@@ -36,13 +37,19 @@ namespace login
 
                 if (lector.Read())
                 {
+                    String Nombre = lector.GetString(2);
+                    String Apellidos = lector.GetString(3) + " " + lector.GetString(4);
                     coneccion.Close();
-                    HomeDigitador pantalla = new HomeDigitador();
+                    HomeDigitador pantalla = new HomeDigitador(Nombre, Apellidos);
                     //pantalla.Show();
                     this.Hide();
                     pantalla.ShowDialog();
                     this.Show();
                     return;
+                }
+                else
+                {
+                    coneccion.Close();
                 }
 
             }
@@ -55,7 +62,7 @@ namespace login
             try
             {
                 coneccion.Open();
-                SqlCommand comando = new SqlCommand("SELECT DNIpostulante, Contraseña FROM POSTULANTE WHERE DNIpostulante = @vusuario AND PWDCOMPARE( @Vcontrasena, Contraseña)=1;", coneccion);
+                SqlCommand comando = new SqlCommand("SELECT DNIpostulante, Contraseña, Nombres, ApellidoPaterno, ApellidoMaterno FROM POSTULANTE WHERE DNIpostulante = @vusuario AND PWDCOMPARE( @Vcontrasena, Contraseña)=1;", coneccion);
                 comando.Parameters.AddWithValue("@vusuario", txt1.Text);
                 comando.Parameters.AddWithValue("@Vcontrasena", txt2.Text);
 
@@ -63,15 +70,19 @@ namespace login
 
                 if (lector.Read())
                 {
+                    String Nombre = lector.GetString(2);
+                    String Apellidos = lector.GetString(3) +" "+ lector.GetString(4);
                     coneccion.Close();
-                    Home pantalla = new Home();
+                    Home pantalla = new Home(Nombre,Apellidos);
                     //pantalla.Show();
                     this.Hide();
                     pantalla.ShowDialog();
                     this.Show();
                 }
+                
                 else
                 {
+                    coneccion.Close();
                     MessageBox.Show("Ingrese usuario y contraseña correctos.", "Datos incorrectos");
                 }
 
@@ -108,6 +119,11 @@ namespace login
         private void labelRegistrarse_MouseLeave(object sender, EventArgs e)
         {
             labelRegistrarse.Font = new Font(labelRegistrarse.Font.Name, labelRegistrarse.Font.Size, FontStyle.Bold);
+        }
+
+        private void txt1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
