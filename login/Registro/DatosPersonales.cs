@@ -71,7 +71,7 @@ namespace login
             }
             else
             {
-                SqlConnection coneccion = new SqlConnection("server=DESKTOP-FPQPC13 ; database = bdAdmision ; INTEGRATED SECURITY = true");
+                SqlConnection coneccion = new SqlConnection("Data Source = localhost\\SQLEXPRESS; Initial Catalog = bdAdmision; Integrated Security = true ");
                 //insert into POSTULANTE values('46611292','Puma','Huamani','Glina','01/02/2002',PWDENCRYPT('123456'))
                 try
                 {
