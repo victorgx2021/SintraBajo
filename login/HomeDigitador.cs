@@ -16,5 +16,25 @@ namespace login
         {
             InitializeComponent();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void buttonDatos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNombre_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblApellidos_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
