@@ -175,6 +175,7 @@
             this.label4.Size = new System.Drawing.Size(210, 16);
             this.label4.TabIndex = 12;
             this.label4.Text = "¿No tiener Usuario ni Contraseña?";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // labelRegistrarse
             // 

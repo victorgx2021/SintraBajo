@@ -48,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="MenuDirector\frmListarPostulantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDirector\frmListarPostulantes.Designer.cs">
+      <DependentUpon>frmListarPostulantes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Registro\DatosPersonales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,10 +72,10 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="HomeDigitador.cs">
+    <Compile Include="MenuDirector\HomeDigitador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomeDigitador.Designer.cs">
+    <Compile Include="MenuDirector\HomeDigitador.Designer.cs">
       <DependentUpon>HomeDigitador.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -86,6 +92,9 @@
     <Compile Include="Registro\VerificarRecibo.Designer.cs">
       <DependentUpon>VerificarRecibo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="MenuDirector\frmListarPostulantes.resx">
+      <DependentUpon>frmListarPostulantes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Registro\DatosPersonales.resx">
       <DependentUpon>DatosPersonales.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,7 +104,7 @@
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomeDigitador.resx">
+    <EmbeddedResource Include="MenuDirector\HomeDigitador.resx">
       <DependentUpon>HomeDigitador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
