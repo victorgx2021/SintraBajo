@@ -12,9 +12,12 @@ namespace login
 {
     public partial class HomeDigitador : Form
     {
-        public HomeDigitador()
+        public HomeDigitador(String pNombre, String pApellido)
         {
             InitializeComponent();
+            lblApellidos.Text = pApellido;
+            lblNombre.Text = pNombre;
+            
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -35,6 +38,16 @@ namespace login
         private void lblApellidos_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

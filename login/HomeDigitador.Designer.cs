@@ -35,11 +35,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonRendirExam = new System.Windows.Forms.Button();
-            this.buttonDatos = new System.Windows.Forms.Button();
-            this.buttonVerNota = new System.Windows.Forms.Button();
             this.panelUser = new System.Windows.Forms.Panel();
             this.lblApellidos = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
+            this.buttonDatos = new System.Windows.Forms.Button();
+            this.buttonVerNota = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
@@ -54,7 +54,7 @@
             this.panel2.Controls.Add(this.btnCerrar);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(989, 37);
             this.panel2.TabIndex = 3;
@@ -69,6 +69,7 @@
             this.BtnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnMinimizar.TabIndex = 12;
             this.BtnMinimizar.TabStop = false;
+            this.BtnMinimizar.Click += new System.EventHandler(this.BtnMinimizar_Click);
             // 
             // btnCerrar
             // 
@@ -80,6 +81,7 @@
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 11;
             this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // panel1
             // 
@@ -131,43 +133,6 @@
             this.buttonRendirExam.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonRendirExam.UseVisualStyleBackColor = true;
             // 
-            // buttonDatos
-            // 
-            this.buttonDatos.FlatAppearance.BorderSize = 0;
-            this.buttonDatos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(213)))), ((int)(((byte)(152)))));
-            this.buttonDatos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(100)))));
-            this.buttonDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDatos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDatos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.buttonDatos.Image = ((System.Drawing.Image)(resources.GetObject("buttonDatos.Image")));
-            this.buttonDatos.Location = new System.Drawing.Point(0, 137);
-            this.buttonDatos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonDatos.Name = "buttonDatos";
-            this.buttonDatos.Size = new System.Drawing.Size(230, 96);
-            this.buttonDatos.TabIndex = 5;
-            this.buttonDatos.Text = "Listar Postulantes";
-            this.buttonDatos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonDatos.UseVisualStyleBackColor = true;
-            this.buttonDatos.Click += new System.EventHandler(this.buttonDatos_Click);
-            // 
-            // buttonVerNota
-            // 
-            this.buttonVerNota.FlatAppearance.BorderSize = 0;
-            this.buttonVerNota.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(213)))), ((int)(((byte)(152)))));
-            this.buttonVerNota.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(100)))));
-            this.buttonVerNota.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonVerNota.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonVerNota.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.buttonVerNota.Image = ((System.Drawing.Image)(resources.GetObject("buttonVerNota.Image")));
-            this.buttonVerNota.Location = new System.Drawing.Point(-3, 342);
-            this.buttonVerNota.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonVerNota.Name = "buttonVerNota";
-            this.buttonVerNota.Size = new System.Drawing.Size(230, 96);
-            this.buttonVerNota.TabIndex = 4;
-            this.buttonVerNota.Text = "Subir Examen";
-            this.buttonVerNota.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonVerNota.UseVisualStyleBackColor = true;
-            // 
             // panelUser
             // 
             this.panelUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(213)))), ((int)(((byte)(152)))));
@@ -206,6 +171,43 @@
             this.lblNombre.TabIndex = 2;
             this.lblNombre.Text = "label1";
             this.lblNombre.Click += new System.EventHandler(this.lblNombre_Click);
+            // 
+            // buttonDatos
+            // 
+            this.buttonDatos.FlatAppearance.BorderSize = 0;
+            this.buttonDatos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(213)))), ((int)(((byte)(152)))));
+            this.buttonDatos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(100)))));
+            this.buttonDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDatos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDatos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.buttonDatos.Image = ((System.Drawing.Image)(resources.GetObject("buttonDatos.Image")));
+            this.buttonDatos.Location = new System.Drawing.Point(0, 137);
+            this.buttonDatos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonDatos.Name = "buttonDatos";
+            this.buttonDatos.Size = new System.Drawing.Size(230, 96);
+            this.buttonDatos.TabIndex = 5;
+            this.buttonDatos.Text = "Listar Postulantes";
+            this.buttonDatos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonDatos.UseVisualStyleBackColor = true;
+            this.buttonDatos.Click += new System.EventHandler(this.buttonDatos_Click);
+            // 
+            // buttonVerNota
+            // 
+            this.buttonVerNota.FlatAppearance.BorderSize = 0;
+            this.buttonVerNota.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(213)))), ((int)(((byte)(152)))));
+            this.buttonVerNota.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(100)))));
+            this.buttonVerNota.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonVerNota.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonVerNota.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.buttonVerNota.Image = ((System.Drawing.Image)(resources.GetObject("buttonVerNota.Image")));
+            this.buttonVerNota.Location = new System.Drawing.Point(-3, 342);
+            this.buttonVerNota.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonVerNota.Name = "buttonVerNota";
+            this.buttonVerNota.Size = new System.Drawing.Size(230, 96);
+            this.buttonVerNota.TabIndex = 4;
+            this.buttonVerNota.Text = "Subir Examen";
+            this.buttonVerNota.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonVerNota.UseVisualStyleBackColor = true;
             // 
             // HomeDigitador
             // 
