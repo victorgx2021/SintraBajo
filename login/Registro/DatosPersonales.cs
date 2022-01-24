@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace login
 {
@@ -24,6 +25,84 @@ namespace login
         {
             dni=frmPadre.getDNI();
             txtDNI.Text=dni;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDNI_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Regitrarse_Click(object sender, EventArgs e)
+        {
+            if (txtNombre.Text == "")
+            {
+                MessageBox.Show("Ingresar nombre.","Campo vacio");
+                txtNombre.Focus();      
+            }
+            else if(txtApaterno.Text =="")
+            {
+                MessageBox.Show("Ingresar apellido paterno.", "Campo vacio");
+                txtApaterno.Focus();
+            }
+            else if (txtAmaterno.Text == "")
+            {
+                MessageBox.Show("Ingresar apellido materno.", "Campo vacio");
+                txtAmaterno.Focus();
+            }
+            else if (txtContraseña.Text == "")
+            {
+                MessageBox.Show("Ingresar contraseña.", "Campo vacio");
+                txtContraseña.Focus();
+            }
+            else if (txtConfirmar.Text == "")
+            {
+                MessageBox.Show("Ingresar Confirmación de Contraseña.", "Campo vacio");
+                txtConfirmar.Focus();
+            }
+            else if(txtContraseña.Text != txtConfirmar.Text)
+            {
+                MessageBox.Show("No coinciden las contraseñas.","Corregir Contraseña");
+
+            }
+            else
+            {
+                SqlConnection coneccion = new SqlConnection("server=DESKTOP-FPQPC13 ; database = bdAdmision ; INTEGRATED SECURITY = true");
+                //insert into POSTULANTE values('46611292','Puma','Huamani','Glina','01/02/2002',PWDENCRYPT('123456'))
+                try
+                {
+                    coneccion.Open();
+                    SqlCommand comando = new SqlCommand("insert into POSTULANTE values(@DNIpostulante,@APPaterno,@APMaterno,@Nombre,@FechaNacimiento,PWDENCRYPT(@Contraseña));", coneccion);
+
+                    comando.Parameters.AddWithValue("@DNIpostulante", txtDNI.Text);
+                    comando.Parameters.AddWithValue("@APPaterno", txtApaterno.Text);
+                    comando.Parameters.AddWithValue("@APMaterno", txtAmaterno.Text);
+                    comando.Parameters.AddWithValue("@Nombre", txtNombre.Text);
+                    DateTime fecha = Convert.ToDateTime(dateTimePicker1.Value.Date.ToString("dd-MM-yyyy"));
+                    //comando.Parameters.AddWithValue((int)fecha.Year, (int)fecha.Month, (int)fecha.Day);
+                    comando.Parameters.AddWithValue("@FechaNacimiento", fecha);
+                    comando.Parameters.AddWithValue("@Contraseña", txtContraseña.Text);
+                    //SELECT NroRecibo, DNIpostulante FROM RECIBO WHERE NroRecibo = @nroRecibo AND DNIpostulante=@dnipostulante;
+                    SqlDataReader lector = comando.ExecuteReader();
+                    MessageBox.Show("Sus datos fueron registrados exitosamente.", "Datos Registrados");
+                    
+                    Close();
+                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "ERROR");
+                }
+            }
+        }
+
+        private void DatosPersonales_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            frmPadre.Close();
         }
     }
 }

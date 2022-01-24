@@ -78,7 +78,6 @@
             // 
             this.txtDNI.Location = new System.Drawing.Point(198, 118);
             this.txtDNI.Name = "txtDNI";
-            this.txtDNI.PasswordChar = '*';
             this.txtDNI.Size = new System.Drawing.Size(113, 20);
             this.txtDNI.TabIndex = 12;
             // 
