@@ -46,7 +46,7 @@ namespace login
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)

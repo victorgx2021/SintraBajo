@@ -40,6 +40,7 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.buttonDatos = new System.Windows.Forms.Button();
             this.buttonVerNota = new System.Windows.Forms.Button();
+            this.pnlContenido = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
@@ -209,12 +210,20 @@
             this.buttonVerNota.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonVerNota.UseVisualStyleBackColor = true;
             // 
+            // pnlContenido
+            // 
+            this.pnlContenido.Location = new System.Drawing.Point(239, 39);
+            this.pnlContenido.Name = "pnlContenido";
+            this.pnlContenido.Size = new System.Drawing.Size(750, 505);
+            this.pnlContenido.TabIndex = 4;
+            // 
             // HomeDigitador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(989, 543);
+            this.Controls.Add(this.pnlContenido);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -244,5 +253,6 @@
         private System.Windows.Forms.Label lblApellidos;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel pnlContenido;
     }
 }
