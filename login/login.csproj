@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,6 +49,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="MenuDirector\Menu examen\frmExamen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDirector\Menu examen\frmExamen.Designer.cs">
+      <DependentUpon>frmExamen.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuDirector\frmListarPostulantes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +99,9 @@
     <Compile Include="Registro\VerificarRecibo.Designer.cs">
       <DependentUpon>VerificarRecibo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="MenuDirector\Menu examen\frmExamen.resx">
+      <DependentUpon>frmExamen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuDirector\frmListarPostulantes.resx">
       <DependentUpon>frmListarPostulantes.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,5 +146,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

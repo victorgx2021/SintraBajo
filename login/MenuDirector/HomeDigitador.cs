@@ -57,5 +57,11 @@ namespace login
         {
             this.Close();
         }
+
+        private void buttonVerNota_Click(object sender, EventArgs e)
+        {
+            frmExamen frm1 = new frmExamen();
+            frm1.Show();
+        }
     }
 }
