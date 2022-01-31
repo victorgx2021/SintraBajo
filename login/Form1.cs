@@ -20,8 +20,8 @@ namespace login
 
 
         //SqlConnection coneccion = new SqlConnection("server=DESKTOP-AGNSDTC/SQLEXPRESS ; database = bdAdmision ; INTEGRATED SECURITY = true");
-       
-        SqlConnection coneccion = new SqlConnection("Data Source = DESKTOP-FPQPC13; Initial Catalog = bdAdmision; Integrated Security = true ");
+        SqlConnection coneccion = new SqlConnection("Data Source = localhost\\SQLEXPRESS; Initial Catalog = bdAdmision; Integrated Security = true ");
+        //SqlConnection coneccion = new SqlConnection("Data Source = DESKTOP-FPQPC13; Initial Catalog = bdAdmision; Integrated Security = true ");
         private void btn_Click(object sender, EventArgs e)
         {
             //*
