@@ -60,8 +60,15 @@ namespace login
 
         private void buttonVerNota_Click(object sender, EventArgs e)
         {
-            frmExamen frm1 = new frmExamen();
-            frm1.Show();
+            if (this.pnlContenido.Controls.Count > 0)
+                this.pnlContenido.Controls.RemoveAt(0);
+            frmExamen frm = new frmExamen();
+            frm.TopLevel = false;//No es un formulario de nivel superior (es formulario dentro de otro)
+            //fh.FormBorderStyle = FormBorderStyle.None;
+            //frm.Dock = DockStyle.Fill;
+            this.pnlContenido.Controls.Add(frm);
+            this.pnlContenido.Tag = frm;
+            frm.Show();
         }
     }
 }
