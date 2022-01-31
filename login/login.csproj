@@ -61,6 +61,12 @@
     <Compile Include="MenuDirector\frmListarPostulantes.Designer.cs">
       <DependentUpon>frmListarPostulantes.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuDirector\Menu examen\frmVerPrueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDirector\Menu examen\frmVerPrueba.designer.cs">
+      <DependentUpon>frmVerPrueba.cs</DependentUpon>
+    </Compile>
     <Compile Include="Registro\DatosPersonales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuDirector\frmListarPostulantes.resx">
       <DependentUpon>frmListarPostulantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDirector\Menu examen\frmVerPrueba.resx">
+      <DependentUpon>frmVerPrueba.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Registro\DatosPersonales.resx">
       <DependentUpon>DatosPersonales.cs</DependentUpon>
