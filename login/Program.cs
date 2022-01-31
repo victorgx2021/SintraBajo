@@ -17,6 +17,7 @@ namespace login
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            //Application.Run(new frmVerPrueba("0001"));
         }
     }
 }
