@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnGuardar = new System.Windows.Forms.Button();
+            System.Windows.Forms.Button btnGuardar;
             this.pnlNavegacion = new System.Windows.Forms.Panel();
             this.gbxNro = new System.Windows.Forms.GroupBox();
             this.rdb8 = new System.Windows.Forms.RadioButton();
@@ -59,6 +59,7 @@
             this.rdbc = new System.Windows.Forms.RadioButton();
             this.rdbd = new System.Windows.Forms.RadioButton();
             this.txtEnunciado = new System.Windows.Forms.TextBox();
+            btnGuardar = new System.Windows.Forms.Button();
             this.pnlNavegacion.SuspendLayout();
             this.gbxNro.SuspendLayout();
             this.pnlTitulo.SuspendLayout();
@@ -68,13 +69,19 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(469, 358);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(84, 36);
-            this.btnGuardar.TabIndex = 0;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            btnGuardar.FlatAppearance.BorderSize = 0;
+            btnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnGuardar.ForeColor = System.Drawing.Color.LightGray;
+            btnGuardar.Location = new System.Drawing.Point(473, 344);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new System.Drawing.Size(84, 36);
+            btnGuardar.TabIndex = 0;
+            btnGuardar.Text = "Guardar";
+            btnGuardar.UseVisualStyleBackColor = false;
+            btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // pnlNavegacion
             // 
@@ -96,7 +103,7 @@
             this.gbxNro.Controls.Add(this.rdb4);
             this.gbxNro.Controls.Add(this.rdb6);
             this.gbxNro.Controls.Add(this.rdb5);
-            this.gbxNro.ForeColor = System.Drawing.Color.White;
+            this.gbxNro.ForeColor = System.Drawing.Color.LightGray;
             this.gbxNro.Location = new System.Drawing.Point(39, 21);
             this.gbxNro.Name = "gbxNro";
             this.gbxNro.Size = new System.Drawing.Size(87, 290);
@@ -107,10 +114,15 @@
             // rdb8
             // 
             this.rdb8.AutoSize = true;
+            this.rdb8.FlatAppearance.BorderSize = 0;
+            this.rdb8.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdb8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdb8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.rdb8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdb8.ForeColor = System.Drawing.Color.Transparent;
-            this.rdb8.Location = new System.Drawing.Point(6, 204);
+            this.rdb8.Location = new System.Drawing.Point(24, 207);
             this.rdb8.Name = "rdb8";
-            this.rdb8.Size = new System.Drawing.Size(35, 20);
+            this.rdb8.Size = new System.Drawing.Size(34, 20);
             this.rdb8.TabIndex = 7;
             this.rdb8.Text = "8";
             this.rdb8.UseVisualStyleBackColor = true;
@@ -119,10 +131,15 @@
             // rdb10
             // 
             this.rdb10.AutoSize = true;
+            this.rdb10.FlatAppearance.BorderSize = 0;
+            this.rdb10.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdb10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdb10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.rdb10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdb10.ForeColor = System.Drawing.Color.Transparent;
-            this.rdb10.Location = new System.Drawing.Point(6, 256);
+            this.rdb10.Location = new System.Drawing.Point(24, 259);
             this.rdb10.Name = "rdb10";
-            this.rdb10.Size = new System.Drawing.Size(42, 20);
+            this.rdb10.Size = new System.Drawing.Size(41, 20);
             this.rdb10.TabIndex = 9;
             this.rdb10.Text = "10";
             this.rdb10.UseVisualStyleBackColor = true;
@@ -132,10 +149,15 @@
             // 
             this.rdb1.AutoSize = true;
             this.rdb1.Checked = true;
+            this.rdb1.FlatAppearance.BorderSize = 0;
+            this.rdb1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdb1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdb1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.rdb1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdb1.ForeColor = System.Drawing.Color.Transparent;
-            this.rdb1.Location = new System.Drawing.Point(6, 22);
+            this.rdb1.Location = new System.Drawing.Point(24, 25);
             this.rdb1.Name = "rdb1";
-            this.rdb1.Size = new System.Drawing.Size(35, 20);
+            this.rdb1.Size = new System.Drawing.Size(34, 20);
             this.rdb1.TabIndex = 0;
             this.rdb1.TabStop = true;
             this.rdb1.Text = "1";
@@ -144,10 +166,15 @@
             // rdb9
             // 
             this.rdb9.AutoSize = true;
+            this.rdb9.FlatAppearance.BorderSize = 0;
+            this.rdb9.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdb9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdb9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.rdb9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdb9.ForeColor = System.Drawing.Color.Transparent;
-            this.rdb9.Location = new System.Drawing.Point(6, 230);
+            this.rdb9.Location = new System.Drawing.Point(24, 233);
             this.rdb9.Name = "rdb9";
-            this.rdb9.Size = new System.Drawing.Size(35, 20);
+            this.rdb9.Size = new System.Drawing.Size(34, 20);
             this.rdb9.TabIndex = 8;
             this.rdb9.Text = "9";
             this.rdb9.UseVisualStyleBackColor = true;
@@ -156,10 +183,15 @@
             // rdb2
             // 
             this.rdb2.AutoSize = true;
+            this.rdb2.FlatAppearance.BorderSize = 0;
+            this.rdb2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdb2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdb2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.rdb2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdb2.ForeColor = System.Drawing.Color.Transparent;
-            this.rdb2.Location = new System.Drawing.Point(6, 48);
+            this.rdb2.Location = new System.Drawing.Point(24, 51);
             this.rdb2.Name = "rdb2";
-            this.rdb2.Size = new System.Drawing.Size(35, 20);
+            this.rdb2.Size = new System.Drawing.Size(34, 20);
             this.rdb2.TabIndex = 1;
             this.rdb2.Text = "2";
             this.rdb2.UseVisualStyleBackColor = true;
@@ -168,10 +200,15 @@
             // rdb3
             // 
             this.rdb3.AutoSize = true;
+            this.rdb3.FlatAppearance.BorderSize = 0;
+            this.rdb3.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdb3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdb3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.rdb3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdb3.ForeColor = System.Drawing.Color.Transparent;
-            this.rdb3.Location = new System.Drawing.Point(6, 74);
+            this.rdb3.Location = new System.Drawing.Point(24, 77);
             this.rdb3.Name = "rdb3";
-            this.rdb3.Size = new System.Drawing.Size(35, 20);
+            this.rdb3.Size = new System.Drawing.Size(34, 20);
             this.rdb3.TabIndex = 2;
             this.rdb3.Text = "3";
             this.rdb3.UseVisualStyleBackColor = true;
@@ -180,10 +217,15 @@
             // rdb7
             // 
             this.rdb7.AutoSize = true;
+            this.rdb7.FlatAppearance.BorderSize = 0;
+            this.rdb7.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdb7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdb7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.rdb7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdb7.ForeColor = System.Drawing.Color.Transparent;
-            this.rdb7.Location = new System.Drawing.Point(6, 178);
+            this.rdb7.Location = new System.Drawing.Point(24, 181);
             this.rdb7.Name = "rdb7";
-            this.rdb7.Size = new System.Drawing.Size(35, 20);
+            this.rdb7.Size = new System.Drawing.Size(34, 20);
             this.rdb7.TabIndex = 6;
             this.rdb7.Text = "7";
             this.rdb7.UseVisualStyleBackColor = true;
@@ -192,10 +234,15 @@
             // rdb4
             // 
             this.rdb4.AutoSize = true;
+            this.rdb4.FlatAppearance.BorderSize = 0;
+            this.rdb4.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdb4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdb4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.rdb4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdb4.ForeColor = System.Drawing.Color.Transparent;
-            this.rdb4.Location = new System.Drawing.Point(6, 100);
+            this.rdb4.Location = new System.Drawing.Point(24, 103);
             this.rdb4.Name = "rdb4";
-            this.rdb4.Size = new System.Drawing.Size(35, 20);
+            this.rdb4.Size = new System.Drawing.Size(34, 20);
             this.rdb4.TabIndex = 3;
             this.rdb4.Text = "4";
             this.rdb4.UseVisualStyleBackColor = true;
@@ -204,10 +251,15 @@
             // rdb6
             // 
             this.rdb6.AutoSize = true;
+            this.rdb6.FlatAppearance.BorderSize = 0;
+            this.rdb6.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdb6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdb6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.rdb6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdb6.ForeColor = System.Drawing.Color.Transparent;
-            this.rdb6.Location = new System.Drawing.Point(6, 152);
+            this.rdb6.Location = new System.Drawing.Point(24, 155);
             this.rdb6.Name = "rdb6";
-            this.rdb6.Size = new System.Drawing.Size(35, 20);
+            this.rdb6.Size = new System.Drawing.Size(34, 20);
             this.rdb6.TabIndex = 5;
             this.rdb6.Text = "6";
             this.rdb6.UseVisualStyleBackColor = true;
@@ -216,10 +268,15 @@
             // rdb5
             // 
             this.rdb5.AutoSize = true;
+            this.rdb5.FlatAppearance.BorderSize = 0;
+            this.rdb5.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdb5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdb5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.rdb5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdb5.ForeColor = System.Drawing.Color.Transparent;
-            this.rdb5.Location = new System.Drawing.Point(6, 126);
+            this.rdb5.Location = new System.Drawing.Point(24, 129);
             this.rdb5.Name = "rdb5";
-            this.rdb5.Size = new System.Drawing.Size(35, 20);
+            this.rdb5.Size = new System.Drawing.Size(34, 20);
             this.rdb5.TabIndex = 4;
             this.rdb5.Text = "5";
             this.rdb5.UseVisualStyleBackColor = true;
@@ -252,9 +309,9 @@
             this.lblID.ForeColor = System.Drawing.Color.Transparent;
             this.lblID.Location = new System.Drawing.Point(114, 21);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(18, 16);
+            this.lblID.Size = new System.Drawing.Size(20, 16);
             this.lblID.TabIndex = 1;
-            this.lblID.Text = "id";
+            this.lblID.Text = "ID";
             // 
             // label2
             // 
@@ -262,9 +319,9 @@
             this.label2.ForeColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(9, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 16);
+            this.label2.Size = new System.Drawing.Size(81, 16);
             this.label2.TabIndex = 0;
-            this.label2.Text = "NroPregunta:";
+            this.label2.Text = "Pregunta N°:";
             // 
             // label1
             // 
@@ -272,9 +329,9 @@
             this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(9, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 16);
+            this.label1.Size = new System.Drawing.Size(57, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "IdPrueba: ";
+            this.label1.Text = "Prueba: ";
             // 
             // pnlPregunta
             // 
@@ -285,7 +342,7 @@
             this.pnlPregunta.Controls.Add(this.txta);
             this.pnlPregunta.Controls.Add(this.groupBox2);
             this.pnlPregunta.Controls.Add(this.txtEnunciado);
-            this.pnlPregunta.Controls.Add(this.btnGuardar);
+            this.pnlPregunta.Controls.Add(btnGuardar);
             this.pnlPregunta.Location = new System.Drawing.Point(212, 33);
             this.pnlPregunta.Name = "pnlPregunta";
             this.pnlPregunta.Size = new System.Drawing.Size(586, 414);
@@ -293,42 +350,52 @@
             // 
             // txte
             // 
-            this.txte.Location = new System.Drawing.Point(179, 313);
+            this.txte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.txte.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txte.Location = new System.Drawing.Point(179, 320);
             this.txte.Name = "txte";
             this.txte.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.txte.Size = new System.Drawing.Size(276, 22);
+            this.txte.Size = new System.Drawing.Size(276, 15);
             this.txte.TabIndex = 21;
             // 
             // txtd
             // 
-            this.txtd.Location = new System.Drawing.Point(179, 271);
+            this.txtd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.txtd.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtd.Location = new System.Drawing.Point(179, 278);
             this.txtd.Name = "txtd";
             this.txtd.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.txtd.Size = new System.Drawing.Size(276, 22);
+            this.txtd.Size = new System.Drawing.Size(276, 15);
             this.txtd.TabIndex = 20;
             // 
             // txtc
             // 
-            this.txtc.Location = new System.Drawing.Point(179, 235);
+            this.txtc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.txtc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtc.Location = new System.Drawing.Point(179, 242);
             this.txtc.Name = "txtc";
             this.txtc.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.txtc.Size = new System.Drawing.Size(276, 22);
+            this.txtc.Size = new System.Drawing.Size(276, 15);
             this.txtc.TabIndex = 19;
             // 
             // txtb
             // 
-            this.txtb.Location = new System.Drawing.Point(179, 198);
+            this.txtb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.txtb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtb.Location = new System.Drawing.Point(179, 205);
             this.txtb.Name = "txtb";
             this.txtb.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.txtb.Size = new System.Drawing.Size(276, 22);
+            this.txtb.Size = new System.Drawing.Size(276, 15);
             this.txtb.TabIndex = 18;
             // 
             // txta
             // 
-            this.txta.Location = new System.Drawing.Point(179, 155);
+            this.txta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.txta.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txta.Location = new System.Drawing.Point(179, 162);
             this.txta.Name = "txta";
             this.txta.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.txta.Size = new System.Drawing.Size(276, 22);
+            this.txta.Size = new System.Drawing.Size(276, 15);
             this.txta.TabIndex = 17;
             // 
             // groupBox2
@@ -338,7 +405,7 @@
             this.groupBox2.Controls.Add(this.rdbe);
             this.groupBox2.Controls.Add(this.rdbc);
             this.groupBox2.Controls.Add(this.rdbd);
-            this.groupBox2.ForeColor = System.Drawing.Color.White;
+            this.groupBox2.ForeColor = System.Drawing.Color.LightGray;
             this.groupBox2.Location = new System.Drawing.Point(61, 133);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(98, 242);
@@ -349,10 +416,14 @@
             // rdbb
             // 
             this.rdbb.AutoSize = true;
-            this.rdbb.ForeColor = System.Drawing.Color.Transparent;
+            this.rdbb.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdbb.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdbb.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.rdbb.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.rdbb.ForeColor = System.Drawing.Color.LightGray;
             this.rdbb.Location = new System.Drawing.Point(48, 67);
             this.rdbb.Name = "rdbb";
-            this.rdbb.Size = new System.Drawing.Size(36, 20);
+            this.rdbb.Size = new System.Drawing.Size(35, 20);
             this.rdbb.TabIndex = 11;
             this.rdbb.TabStop = true;
             this.rdbb.Text = "b";
@@ -361,10 +432,14 @@
             // rdba
             // 
             this.rdba.AutoSize = true;
-            this.rdba.ForeColor = System.Drawing.Color.Transparent;
+            this.rdba.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdba.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdba.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.rdba.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.rdba.ForeColor = System.Drawing.Color.LightGray;
             this.rdba.Location = new System.Drawing.Point(48, 26);
             this.rdba.Name = "rdba";
-            this.rdba.Size = new System.Drawing.Size(36, 20);
+            this.rdba.Size = new System.Drawing.Size(35, 20);
             this.rdba.TabIndex = 10;
             this.rdba.TabStop = true;
             this.rdba.Text = "a";
@@ -373,10 +448,14 @@
             // rdbe
             // 
             this.rdbe.AutoSize = true;
-            this.rdbe.ForeColor = System.Drawing.Color.Transparent;
+            this.rdbe.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdbe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdbe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.rdbe.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.rdbe.ForeColor = System.Drawing.Color.LightGray;
             this.rdbe.Location = new System.Drawing.Point(48, 182);
             this.rdbe.Name = "rdbe";
-            this.rdbe.Size = new System.Drawing.Size(36, 20);
+            this.rdbe.Size = new System.Drawing.Size(35, 20);
             this.rdbe.TabIndex = 14;
             this.rdbe.TabStop = true;
             this.rdbe.Text = "e";
@@ -385,10 +464,14 @@
             // rdbc
             // 
             this.rdbc.AutoSize = true;
-            this.rdbc.ForeColor = System.Drawing.Color.Transparent;
+            this.rdbc.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdbc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdbc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.rdbc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.rdbc.ForeColor = System.Drawing.Color.LightGray;
             this.rdbc.Location = new System.Drawing.Point(49, 104);
             this.rdbc.Name = "rdbc";
-            this.rdbc.Size = new System.Drawing.Size(35, 20);
+            this.rdbc.Size = new System.Drawing.Size(34, 20);
             this.rdbc.TabIndex = 12;
             this.rdbc.TabStop = true;
             this.rdbc.Text = "c";
@@ -397,10 +480,14 @@
             // rdbd
             // 
             this.rdbd.AutoSize = true;
-            this.rdbd.ForeColor = System.Drawing.Color.Transparent;
+            this.rdbd.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdbd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdbd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.rdbd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.rdbd.ForeColor = System.Drawing.Color.LightGray;
             this.rdbd.Location = new System.Drawing.Point(49, 140);
             this.rdbd.Name = "rdbd";
-            this.rdbd.Size = new System.Drawing.Size(36, 20);
+            this.rdbd.Size = new System.Drawing.Size(35, 20);
             this.rdbd.TabIndex = 13;
             this.rdbd.TabStop = true;
             this.rdbd.Text = "d";
@@ -408,6 +495,8 @@
             // 
             // txtEnunciado
             // 
+            this.txtEnunciado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.txtEnunciado.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEnunciado.Location = new System.Drawing.Point(61, 22);
             this.txtEnunciado.Multiline = true;
             this.txtEnunciado.Name = "txtEnunciado";
@@ -442,8 +531,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Panel pnlNavegacion;
         private System.Windows.Forms.RadioButton rdb10;
         private System.Windows.Forms.RadioButton rdb9;
