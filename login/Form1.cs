@@ -18,10 +18,8 @@ namespace login
             InitializeComponent();
         }
 
-
-        //SqlConnection coneccion = new SqlConnection("server=DESKTOP-AGNSDTC/SQLEXPRESS ; database = bdAdmision ; INTEGRATED SECURITY = true");
-        SqlConnection coneccion = new SqlConnection("Data Source = localhost\\SQLEXPRESS; Initial Catalog = bdAdmision; Integrated Security = true ");
-        //SqlConnection coneccion = new SqlConnection("Data Source = DESKTOP-FPQPC13; Initial Catalog = bdAdmision; Integrated Security = true ");
+        static Conexion cnx = new Conexion();
+        SqlConnection coneccion = cnx.getConection(); //new SqlConnection("Data Source = localhost\\SQLEXPRESS; Initial Catalog = bdAdmision; Integrated Security = true ");
         private void btn_Click(object sender, EventArgs e)
         {
             //*
@@ -62,7 +60,7 @@ namespace login
             try
             {
                 coneccion.Open();
-                SqlCommand comando = new SqlCommand("SELECT DNIpostulante, Contraseña, Nombres, ApellidoPaterno, ApellidoMaterno FROM POSTULANTE WHERE DNIpostulante = @vusuario AND PWDCOMPARE( @Vcontrasena, Contraseña)=1;", coneccion);
+                SqlCommand comando = new SqlCommand("SELECT DNIpostulante, Contraseña, Nombres, ApellidoPaterno, ApellidoMaterno, Anular FROM POSTULANTE WHERE DNIpostulante = @vusuario AND PWDCOMPARE( @Vcontrasena, Contraseña)=1;", coneccion);
                 comando.Parameters.AddWithValue("@vusuario", txt1.Text);
                 comando.Parameters.AddWithValue("@Vcontrasena", txt2.Text);
 
@@ -70,11 +68,14 @@ namespace login
 
                 if (lector.Read())
                 {
+                    String DNI = lector.GetString(0);
                     String Nombre = lector.GetString(2);
-                    String Apellidos = lector.GetString(3) +" "+ lector.GetString(4);
+                    String APaterno = lector.GetString(3);
+                    String AMaterno = lector.GetString(4);
+                    bool Anulacion = lector.GetBoolean(5);
+                    String Apellidos = lector.GetString(3) + " " + lector.GetString(4);
                     coneccion.Close();
-                    Home pantalla = new Home(Nombre,Apellidos);
-                    //pantalla.Show();
+                    Home pantalla = new Home(DNI, APaterno, AMaterno, Nombre, Anulacion, Apellidos);
                     this.Hide();
                     pantalla.ShowDialog();
                     this.Show();
@@ -89,7 +90,7 @@ namespace login
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                MessageBox.Show(ex.Message);
             }//*/
         }
 

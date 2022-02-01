@@ -63,9 +63,10 @@ namespace login
             get_alternativa("d");
             get_alternativa("e");
         }
+        static Conexion cnx = new Conexion();
+        SqlConnection coneccion = cnx.getConection();
         public void get_enunciado()
         {
-            SqlConnection coneccion = new SqlConnection("Data Source = localhost\\SQLEXPRESS; Initial Catalog = bdAdmision; Integrated Security = true ");
             String enunciado = "";
             String clave = "";
             try

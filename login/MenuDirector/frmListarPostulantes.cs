@@ -19,8 +19,8 @@ namespace login
             Inicializar();
         }
 
-        SqlConnection coneccion = new SqlConnection("Data Source = localhost\\SQLEXPRESS; Initial Catalog = bdAdmision; Integrated Security = true ");
-
+        static Conexion cnx = new Conexion();
+        SqlConnection coneccion = cnx.getConection();
         private void Inicializar()
         {
 

@@ -21,7 +21,8 @@ namespace login
             InitializeComponent();
             frmPadre = FrmPadre;
         }
-        SqlConnection coneccion = new SqlConnection("Data Source = localhost\\SQLEXPRESS; Initial Catalog = bdAdmision; Integrated Security = true ");
+        static Conexion cnx = new Conexion();
+        SqlConnection coneccion = cnx.getConection();
         private void btn_Click(object sender, EventArgs e)
         {
 
