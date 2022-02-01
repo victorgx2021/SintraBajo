@@ -71,12 +71,12 @@ namespace login
             }
             else
             {
-                SqlConnection coneccion = new SqlConnection("Data Source = localhost\\SQLEXPRESS; Initial Catalog = bdAdmision; Integrated Security = true ");
-                //insert into POSTULANTE values('46611292','Puma','Huamani','Glina','01/02/2002',PWDENCRYPT('123456'))
+                Conexion cnx = new Conexion();
+                SqlConnection coneccion = cnx.getConection();
                 try
                 {
                     coneccion.Open();
-                    SqlCommand comando = new SqlCommand("insert into POSTULANTE values(@DNIpostulante,@APPaterno,@APMaterno,@Nombre,@FechaNacimiento,PWDENCRYPT(@Contraseña));", coneccion);
+                    SqlCommand comando = new SqlCommand("insert into POSTULANTE values(@DNIpostulante,@APPaterno,@APMaterno,@Nombre,@FechaNacimiento,PWDENCRYPT(@Contraseña),0);", coneccion);
 
                     comando.Parameters.AddWithValue("@DNIpostulante", txtDNI.Text);
                     comando.Parameters.AddWithValue("@APPaterno", txtApaterno.Text);

@@ -27,8 +27,8 @@ namespace login
         {
 
         }
-        SqlConnection coneccion = new SqlConnection("Data Source = localhost\\SQLEXPRESS; Initial Catalog = bdAdmision; Integrated Security = true ");
-        //SqlConnection coneccion = new SqlConnection("Data Source = DESKTOP-FPQPC13; Initial Catalog = bdAdmision; Integrated Security = true ");
+        static Conexion cnx = new Conexion();
+        SqlConnection coneccion = cnx.getConection();
         public void Ver(object sender, EventArgs e)
         {
             coneccion.Open();

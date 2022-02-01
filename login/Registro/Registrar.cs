@@ -22,8 +22,8 @@ namespace login
 
         }
 
-        SqlConnection coneccion = new SqlConnection("server=DESKTOP-FPQPC13 ; database = bdAdmision ; INTEGRATED SECURITY = true");
-
+        static Conexion cnx = new Conexion();
+        SqlConnection coneccion = cnx.getConection();
         public void setDNI(string Dni)
         {
             dni = Dni;
