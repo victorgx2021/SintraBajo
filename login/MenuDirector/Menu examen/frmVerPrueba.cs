@@ -230,6 +230,7 @@ namespace login
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             guardarPregunta();
+            this.Close();
         }
 
         private void rdb2_CheckedChanged(object sender, EventArgs e)
