@@ -106,7 +106,6 @@ namespace login
                     coneccion.Close();
                     Ver(sender, e);
                     aux = true;
-
                 }
                 catch (Exception ex)
                 {
