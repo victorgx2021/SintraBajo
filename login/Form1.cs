@@ -13,6 +13,7 @@ namespace login
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
@@ -55,14 +56,14 @@ namespace login
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                MessageBox.Show(ex.Message);
 
             }
 
             try
             {
                 coneccion.Open();
-                SqlCommand comando = new SqlCommand("SELECT DNIpostulante, Contraseña, Nombres, ApellidoPaterno, ApellidoMaterno FROM POSTULANTE WHERE DNIpostulante = @vusuario AND PWDCOMPARE( @Vcontrasena, Contraseña)=1;", coneccion);
+                SqlCommand comando = new SqlCommand("SELECT DNIpostulante, Contraseña, Nombres, ApellidoPaterno, ApellidoMaterno, Anular FROM POSTULANTE WHERE DNIpostulante = @vusuario AND PWDCOMPARE( @Vcontrasena, Contraseña)=1;", coneccion);
                 comando.Parameters.AddWithValue("@vusuario", txt1.Text);
                 comando.Parameters.AddWithValue("@Vcontrasena", txt2.Text);
 
@@ -70,10 +71,19 @@ namespace login
 
                 if (lector.Read())
                 {
+                    String DNI = lector.GetString(0);
                     String Nombre = lector.GetString(2);
+                    String APaterno = lector.GetString(3);
+                    String AMaterno = lector.GetString(4);
+                    //String A = lector.GetString(5);
+                    bool Anulacion = lector.GetBoolean(5); 
                     String Apellidos = lector.GetString(3) +" "+ lector.GetString(4);
+                    /*if (A == "1")
+                    {
+                        Anulacion = true;
+                    }*/
                     coneccion.Close();
-                    Home pantalla = new Home(Nombre,Apellidos);
+                    Home pantalla = new Home(DNI, APaterno, AMaterno, Nombre, Anulacion,Apellidos);
                     //pantalla.Show();
                     this.Hide();
                     pantalla.ShowDialog();
@@ -89,7 +99,7 @@ namespace login
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                MessageBox.Show(ex.Message);
             }//*/
         }
 

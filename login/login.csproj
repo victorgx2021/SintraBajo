@@ -48,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="MenuPostulante\frmDatosPersonales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPostulante\frmDatosPersonales.Designer.cs">
+      <DependentUpon>frmDatosPersonales.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuDirector\frmListarPostulantes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,10 +72,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Home.cs">
+    <Compile Include="MenuPostulante\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
+    <Compile Include="MenuPostulante\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuDirector\HomeDigitador.cs">
@@ -80,10 +86,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Registrar.cs">
+    <Compile Include="Registro\Registrar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registrar.Designer.cs">
+    <Compile Include="Registro\Registrar.Designer.cs">
       <DependentUpon>Registrar.cs</DependentUpon>
     </Compile>
     <Compile Include="Registro\VerificarRecibo.cs">
@@ -95,13 +101,16 @@
     <EmbeddedResource Include="MenuDirector\frmListarPostulantes.resx">
       <DependentUpon>frmListarPostulantes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuPostulante\frmDatosPersonales.resx">
+      <DependentUpon>frmDatosPersonales.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Registro\DatosPersonales.resx">
       <DependentUpon>DatosPersonales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
+    <EmbeddedResource Include="MenuPostulante\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuDirector\HomeDigitador.resx">
@@ -117,7 +126,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Registrar.resx">
+    <EmbeddedResource Include="Registro\Registrar.resx">
       <DependentUpon>Registrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Registro\VerificarRecibo.resx">
@@ -136,5 +145,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

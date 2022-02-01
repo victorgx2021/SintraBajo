@@ -34,18 +34,19 @@
             this.buttonDatos = new System.Windows.Forms.Button();
             this.buttonVerNota = new System.Windows.Forms.Button();
             this.panelUser = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblApellidos = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.BtnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelContenido = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panelUser.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -79,7 +80,6 @@
             this.buttonRendirExam.Text = "Rendir Examen";
             this.buttonRendirExam.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonRendirExam.UseVisualStyleBackColor = true;
-            this.buttonRendirExam.Click += new System.EventHandler(this.buttonRendirExam_Click);
             // 
             // buttonDatos
             // 
@@ -99,7 +99,6 @@
             this.buttonDatos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonDatos.UseVisualStyleBackColor = true;
             this.buttonDatos.Click += new System.EventHandler(this.button1_Click);
-            this.buttonDatos.MouseMove += new System.Windows.Forms.MouseEventHandler(this.buttonDatos_MouseMove);
             // 
             // buttonVerNota
             // 
@@ -118,7 +117,6 @@
             this.buttonVerNota.Text = "Ver Nota";
             this.buttonVerNota.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonVerNota.UseVisualStyleBackColor = true;
-            this.buttonVerNota.Click += new System.EventHandler(this.buttonVerNota_Click);
             // 
             // panelUser
             // 
@@ -131,7 +129,16 @@
             this.panelUser.Name = "panelUser";
             this.panelUser.Size = new System.Drawing.Size(243, 140);
             this.panelUser.TabIndex = 2;
-            this.panelUser.Paint += new System.Windows.Forms.PaintEventHandler(this.panelUser_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(4, 30);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // lblApellidos
             // 
@@ -145,7 +152,6 @@
             this.lblApellidos.Size = new System.Drawing.Size(62, 21);
             this.lblApellidos.TabIndex = 7;
             this.lblApellidos.Text = "label2";
-            this.lblApellidos.Click += new System.EventHandler(this.lblApellidos_Click);
             // 
             // lblNombre
             // 
@@ -159,7 +165,6 @@
             this.lblNombre.Size = new System.Drawing.Size(62, 21);
             this.lblNombre.TabIndex = 2;
             this.lblNombre.Text = "label1";
-            this.lblNombre.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
@@ -197,15 +202,12 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // pictureBox1
+            // panelContenido
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(4, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.panelContenido.Location = new System.Drawing.Point(252, 44);
+            this.panelContenido.Name = "panelContenido";
+            this.panelContenido.Size = new System.Drawing.Size(748, 557);
+            this.panelContenido.TabIndex = 2;
             // 
             // Home
             // 
@@ -213,6 +215,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(1000, 601);
+            this.Controls.Add(this.panelContenido);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -224,10 +227,10 @@
             this.panel1.ResumeLayout(false);
             this.panelUser.ResumeLayout(false);
             this.panelUser.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -245,5 +248,6 @@
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Panel panelUser;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panelContenido;
     }
 }

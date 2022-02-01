@@ -76,7 +76,7 @@ namespace login
                 try
                 {
                     coneccion.Open();
-                    SqlCommand comando = new SqlCommand("insert into POSTULANTE values(@DNIpostulante,@APPaterno,@APMaterno,@Nombre,@FechaNacimiento,PWDENCRYPT(@Contraseña));", coneccion);
+                    SqlCommand comando = new SqlCommand("insert into POSTULANTE values(@DNIpostulante,@APPaterno,@APMaterno,@Nombre,@FechaNacimiento,PWDENCRYPT(@Contraseña),0);", coneccion);
 
                     comando.Parameters.AddWithValue("@DNIpostulante", txtDNI.Text);
                     comando.Parameters.AddWithValue("@APPaterno", txtApaterno.Text);

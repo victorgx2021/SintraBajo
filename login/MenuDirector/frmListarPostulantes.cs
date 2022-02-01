@@ -72,6 +72,11 @@ namespace login
             dataGridView1.Columns[2].Width = 170;
             dataGridView1.Columns[3].Width = 246;
         }
+
+        private void frmListarPostulantes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
