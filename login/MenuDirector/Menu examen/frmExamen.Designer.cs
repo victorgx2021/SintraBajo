@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonConfirmar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.labelD = new System.Windows.Forms.Label();
@@ -44,87 +43,87 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // buttonConfirmar
-            // 
-            this.buttonConfirmar.Location = new System.Drawing.Point(433, 304);
-            this.buttonConfirmar.Name = "buttonConfirmar";
-            this.buttonConfirmar.Size = new System.Drawing.Size(75, 23);
-            this.buttonConfirmar.TabIndex = 1;
-            this.buttonConfirmar.Text = "Crear";
-            this.buttonConfirmar.UseVisualStyleBackColor = true;
-            this.buttonConfirmar.Click += new System.EventHandler(this.buttonConfirmar_Click);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(30, 39);
+            this.dataGridView1.Location = new System.Drawing.Point(40, 48);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(478, 193);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(637, 238);
             this.dataGridView1.TabIndex = 2;
             // 
             // textBoxID
             // 
-            this.textBoxID.Location = new System.Drawing.Point(51, 266);
+            this.textBoxID.Location = new System.Drawing.Point(68, 327);
+            this.textBoxID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxID.Name = "textBoxID";
-            this.textBoxID.Size = new System.Drawing.Size(100, 20);
+            this.textBoxID.Size = new System.Drawing.Size(132, 22);
             this.textBoxID.TabIndex = 3;
             // 
             // labelD
             // 
             this.labelD.AutoSize = true;
-            this.labelD.Location = new System.Drawing.Point(27, 269);
+            this.labelD.Location = new System.Drawing.Point(36, 331);
+            this.labelD.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelD.Name = "labelD";
-            this.labelD.Size = new System.Drawing.Size(18, 13);
+            this.labelD.Size = new System.Drawing.Size(20, 16);
             this.labelD.TabIndex = 4;
             this.labelD.Text = "ID";
             // 
             // labelTipo
             // 
             this.labelTipo.AutoSize = true;
-            this.labelTipo.Location = new System.Drawing.Point(17, 306);
+            this.labelTipo.Location = new System.Drawing.Point(23, 377);
+            this.labelTipo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTipo.Name = "labelTipo";
-            this.labelTipo.Size = new System.Drawing.Size(28, 13);
+            this.labelTipo.Size = new System.Drawing.Size(35, 16);
             this.labelTipo.TabIndex = 5;
             this.labelTipo.Text = "Tipo";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(166, 269);
+            this.label1.Location = new System.Drawing.Point(221, 331);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.Size = new System.Drawing.Size(45, 16);
             this.label1.TabIndex = 6;
             this.label1.Text = "Fecha";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(166, 309);
+            this.label2.Location = new System.Drawing.Point(221, 380);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(23, 13);
+            this.label2.Size = new System.Drawing.Size(27, 16);
             this.label2.TabIndex = 7;
             this.label2.Text = "Dni";
             // 
             // textBoxDNI
             // 
-            this.textBoxDNI.Location = new System.Drawing.Point(204, 306);
+            this.textBoxDNI.Location = new System.Drawing.Point(272, 377);
+            this.textBoxDNI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxDNI.Name = "textBoxDNI";
-            this.textBoxDNI.Size = new System.Drawing.Size(91, 20);
+            this.textBoxDNI.Size = new System.Drawing.Size(120, 22);
             this.textBoxDNI.TabIndex = 9;
             // 
             // dateTimePicker_Fecha
             // 
             this.dateTimePicker_Fecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker_Fecha.Location = new System.Drawing.Point(209, 269);
+            this.dateTimePicker_Fecha.Location = new System.Drawing.Point(279, 331);
+            this.dateTimePicker_Fecha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePicker_Fecha.Name = "dateTimePicker_Fecha";
-            this.dateTimePicker_Fecha.Size = new System.Drawing.Size(86, 20);
+            this.dateTimePicker_Fecha.Size = new System.Drawing.Size(113, 22);
             this.dateTimePicker_Fecha.TabIndex = 10;
             // 
             // buttonAñadir
             // 
-            this.buttonAñadir.Location = new System.Drawing.Point(433, 268);
+            this.buttonAñadir.Location = new System.Drawing.Point(577, 330);
+            this.buttonAñadir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonAñadir.Name = "buttonAñadir";
-            this.buttonAñadir.Size = new System.Drawing.Size(75, 23);
+            this.buttonAñadir.Size = new System.Drawing.Size(100, 28);
             this.buttonAñadir.TabIndex = 12;
             this.buttonAñadir.Text = "Añadir";
             this.buttonAñadir.UseVisualStyleBackColor = true;
@@ -137,33 +136,36 @@
             "1) ORDINARIO",
             "2) PRIMERA OPCION",
             "3) DIRIMENCIA"});
-            this.comboBoxTipo.Location = new System.Drawing.Point(51, 303);
+            this.comboBoxTipo.Location = new System.Drawing.Point(68, 373);
+            this.comboBoxTipo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxTipo.Name = "comboBoxTipo";
-            this.comboBoxTipo.Size = new System.Drawing.Size(100, 21);
+            this.comboBoxTipo.Size = new System.Drawing.Size(132, 24);
             this.comboBoxTipo.TabIndex = 13;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(317, 244);
+            this.label3.Location = new System.Drawing.Point(423, 300);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(30, 13);
+            this.label3.Size = new System.Drawing.Size(37, 16);
             this.label3.TabIndex = 15;
             this.label3.Text = "Hora";
             // 
             // dateTimeHORA
             // 
             this.dateTimeHORA.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimeHORA.Location = new System.Drawing.Point(320, 271);
+            this.dateTimeHORA.Location = new System.Drawing.Point(427, 334);
+            this.dateTimeHORA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimeHORA.Name = "dateTimeHORA";
-            this.dateTimeHORA.Size = new System.Drawing.Size(78, 20);
+            this.dateTimeHORA.Size = new System.Drawing.Size(103, 22);
             this.dateTimeHORA.TabIndex = 16;
             // 
             // frmExamen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(534, 369);
+            this.ClientSize = new System.Drawing.Size(712, 454);
             this.Controls.Add(this.dateTimeHORA);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBoxTipo);
@@ -176,10 +178,11 @@
             this.Controls.Add(this.labelD);
             this.Controls.Add(this.textBoxID);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.buttonConfirmar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmExamen";
             this.Text = "frmExamen";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmExamen_FormClosing);
             this.Load += new System.EventHandler(this.frmExamen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -188,7 +191,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button buttonConfirmar;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBoxID;
         private System.Windows.Forms.Label labelD;
