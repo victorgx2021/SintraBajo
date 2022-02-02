@@ -79,6 +79,7 @@
             this.buttonRendirExam.Text = "Rendir Examen";
             this.buttonRendirExam.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonRendirExam.UseVisualStyleBackColor = true;
+            this.buttonRendirExam.Click += new System.EventHandler(this.buttonRendirExam_Click);
             // 
             // buttonDatos
             // 
@@ -210,6 +211,7 @@
             this.panelContenido.Name = "panelContenido";
             this.panelContenido.Size = new System.Drawing.Size(561, 453);
             this.panelContenido.TabIndex = 3;
+            this.panelContenido.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenido_Paint);
             // 
             // Home
             // 

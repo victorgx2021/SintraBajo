@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -37,6 +37,9 @@ namespace login
                 {
                     String Nombre = lector.GetString(2);
                     String Apellidos = lector.GetString(3) + " " + lector.GetString(4);
+                    //---------------guardar del dni del estudiante---------------
+                    Examen.Dato.datos.Add(txt1.Text);
+                    //---------------------------------------------------------
                     coneccion.Close();
                     HomeDigitador pantalla = new HomeDigitador(Nombre, Apellidos);
                     //pantalla.Show();

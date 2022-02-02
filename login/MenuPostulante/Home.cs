@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -76,6 +76,19 @@ namespace login
             this.panelContenido.Controls.Add(frm);
             this.panelContenido.Tag = frm;
             frm.Show();
+        }
+
+        private void buttonRendirExam_Click(object sender, EventArgs e)
+        {
+            Examen.Prueba lista_pruebas = new Examen.Prueba();
+            this.Hide();
+            lista_pruebas.ShowDialog();
+            this.Show();
+        }
+
+        private void panelContenido_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>login</RootNamespace>
     <AssemblyName>login</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -48,7 +48,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bdAdmisionDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdAdmisionDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Conexion.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Examen\Dato.cs" />
+    <Compile Include="Examen\evaluar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examen\evaluar.Designer.cs">
+      <DependentUpon>evaluar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examen\evaluar_v1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examen\evaluar_v1.Designer.cs">
+      <DependentUpon>evaluar_v1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examen\Prueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examen\Prueba.Designer.cs">
+      <DependentUpon>Prueba.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPostulante\frmDatosPersonales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +140,15 @@
     <Compile Include="Registro\VerificarRecibo.Designer.cs">
       <DependentUpon>VerificarRecibo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Examen\evaluar.resx">
+      <DependentUpon>evaluar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examen\evaluar_v1.resx">
+      <DependentUpon>evaluar_v1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examen\Prueba.resx">
+      <DependentUpon>Prueba.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuPostulante\frmDatosPersonales.resx">
       <DependentUpon>frmDatosPersonales.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +189,28 @@
     <EmbeddedResource Include="Registro\VerificarRecibo.resx">
       <DependentUpon>VerificarRecibo.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="bdAdmisionDataSet.xsc">
+      <DependentUpon>bdAdmisionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bdAdmisionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdAdmisionDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdAdmisionDataSet.xss">
+      <DependentUpon>bdAdmisionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
