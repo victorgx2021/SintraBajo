@@ -21,6 +21,7 @@ namespace login.Examen
         SqlConnection coneccion = cnx.getConection();
         private void button1_Click(object sender, EventArgs e)
         {
+            //---
             //consulta de las alternativas 
             coneccion.Open();
             string query = "select * from viAlternativas2 where NroPregunta=1";
