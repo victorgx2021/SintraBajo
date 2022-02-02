@@ -12,12 +12,13 @@ namespace login
 {
     public partial class HomeDigitador : Form
     {
-        public HomeDigitador(String pNombre, String pApellido)
+        private string DNI;
+        public HomeDigitador(String pNombre, String pApellido, string pDNI)
         {
             InitializeComponent();
             lblApellidos.Text = pApellido;
             lblNombre.Text = pNombre;
-            
+            DNI = pDNI;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -62,7 +63,7 @@ namespace login
         {
             if (this.pnlContenido.Controls.Count > 0)
                 this.pnlContenido.Controls.RemoveAt(0);
-            frmExamen frm = new frmExamen();
+            frmExamen frm = new frmExamen(DNI);
             frm.TopLevel = false;//No es un formulario de nivel superior (es formulario dentro de otro)
             //fh.FormBorderStyle = FormBorderStyle.None;
             //frm.Dock = DockStyle.Fill;

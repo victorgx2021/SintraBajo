@@ -73,14 +73,15 @@
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.dataGridView1.Location = new System.Drawing.Point(39, 33);
+            this.dataGridView1.Location = new System.Drawing.Point(29, 27);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridView1.Size = new System.Drawing.Size(668, 437);
+            this.dataGridView1.Size = new System.Drawing.Size(501, 355);
             this.dataGridView1.TabIndex = 0;
             // 
             // ColumnDNI
@@ -89,7 +90,7 @@
             this.ColumnDNI.MinimumWidth = 6;
             this.ColumnDNI.Name = "ColumnDNI";
             this.ColumnDNI.ReadOnly = true;
-            this.ColumnDNI.Width = 80;
+            this.ColumnDNI.Width = 60;
             // 
             // ColumnAP
             // 
@@ -97,7 +98,7 @@
             this.ColumnAP.MinimumWidth = 6;
             this.ColumnAP.Name = "ColumnAP";
             this.ColumnAP.ReadOnly = true;
-            this.ColumnAP.Width = 170;
+            this.ColumnAP.Width = 140;
             // 
             // ColumnAM
             // 
@@ -105,7 +106,7 @@
             this.ColumnAM.MinimumWidth = 6;
             this.ColumnAM.Name = "ColumnAM";
             this.ColumnAM.ReadOnly = true;
-            this.ColumnAM.Width = 170;
+            this.ColumnAM.Width = 140;
             // 
             // ColumnN
             // 
@@ -113,17 +114,18 @@
             this.ColumnN.MinimumWidth = 6;
             this.ColumnN.Name = "ColumnN";
             this.ColumnN.ReadOnly = true;
-            this.ColumnN.Width = 246;
+            this.ColumnN.Width = 326;
             // 
             // frmListarPostulantes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.ClientSize = new System.Drawing.Size(748, 503);
+            this.ClientSize = new System.Drawing.Size(561, 409);
             this.Controls.Add(this.dataGridView1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmListarPostulantes";
             this.Text = "frmListarPostulantes";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

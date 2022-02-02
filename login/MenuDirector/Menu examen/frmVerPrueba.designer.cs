@@ -385,6 +385,7 @@
             // 
             this.txte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.txte.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txte.ForeColor = System.Drawing.Color.LightGray;
             this.txte.Location = new System.Drawing.Point(135, 272);
             this.txte.Margin = new System.Windows.Forms.Padding(2);
             this.txte.Name = "txte";
@@ -396,6 +397,7 @@
             // 
             this.txtd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.txtd.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtd.ForeColor = System.Drawing.Color.LightGray;
             this.txtd.Location = new System.Drawing.Point(135, 242);
             this.txtd.Margin = new System.Windows.Forms.Padding(2);
             this.txtd.Name = "txtd";
@@ -407,6 +409,7 @@
             // 
             this.txtc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.txtc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtc.ForeColor = System.Drawing.Color.LightGray;
             this.txtc.Location = new System.Drawing.Point(135, 210);
             this.txtc.Margin = new System.Windows.Forms.Padding(2);
             this.txtc.Name = "txtc";
@@ -418,6 +421,7 @@
             // 
             this.txtb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.txtb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtb.ForeColor = System.Drawing.Color.LightGray;
             this.txtb.Location = new System.Drawing.Point(134, 182);
             this.txtb.Margin = new System.Windows.Forms.Padding(2);
             this.txtb.Name = "txtb";
@@ -429,6 +433,7 @@
             // 
             this.txta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.txta.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txta.ForeColor = System.Drawing.Color.LightGray;
             this.txta.Location = new System.Drawing.Point(135, 153);
             this.txta.Margin = new System.Windows.Forms.Padding(2);
             this.txta.Name = "txta";
@@ -542,6 +547,7 @@
             // 
             this.txtEnunciado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.txtEnunciado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEnunciado.ForeColor = System.Drawing.Color.LightGray;
             this.txtEnunciado.Location = new System.Drawing.Point(46, 18);
             this.txtEnunciado.Margin = new System.Windows.Forms.Padding(2);
             this.txtEnunciado.Multiline = true;
