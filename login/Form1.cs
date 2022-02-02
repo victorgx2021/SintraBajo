@@ -38,7 +38,7 @@ namespace login
                     String Nombre = lector.GetString(2);
                     String Apellidos = lector.GetString(3) + " " + lector.GetString(4);
                     coneccion.Close();
-                    HomeDigitador pantalla = new HomeDigitador(Nombre, Apellidos);
+                    HomeDigitador pantalla = new HomeDigitador(Nombre, Apellidos,txt1.Text);
                     //pantalla.Show();
                     this.Hide();
                     pantalla.ShowDialog();
@@ -53,8 +53,7 @@ namespace login
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
-
+                MessageBox.Show(ex.Message);
             }
 
             try

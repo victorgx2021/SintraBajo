@@ -47,6 +47,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlPregunta = new System.Windows.Forms.Panel();
+            this.labelClaveCorrecta = new System.Windows.Forms.Label();
             this.txte = new System.Windows.Forms.TextBox();
             this.txtd = new System.Windows.Forms.TextBox();
             this.txtc = new System.Windows.Forms.TextBox();
@@ -75,9 +76,10 @@
             btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnGuardar.ForeColor = System.Drawing.Color.LightGray;
-            btnGuardar.Location = new System.Drawing.Point(473, 344);
+            btnGuardar.Location = new System.Drawing.Point(355, 280);
+            btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new System.Drawing.Size(84, 36);
+            btnGuardar.Size = new System.Drawing.Size(63, 29);
             btnGuardar.TabIndex = 0;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = false;
@@ -86,9 +88,10 @@
             // pnlNavegacion
             // 
             this.pnlNavegacion.Controls.Add(this.gbxNro);
-            this.pnlNavegacion.Location = new System.Drawing.Point(0, 97);
+            this.pnlNavegacion.Location = new System.Drawing.Point(0, 79);
+            this.pnlNavegacion.Margin = new System.Windows.Forms.Padding(2);
             this.pnlNavegacion.Name = "pnlNavegacion";
-            this.pnlNavegacion.Size = new System.Drawing.Size(204, 350);
+            this.pnlNavegacion.Size = new System.Drawing.Size(153, 284);
             this.pnlNavegacion.TabIndex = 1;
             // 
             // gbxNro
@@ -104,9 +107,11 @@
             this.gbxNro.Controls.Add(this.rdb6);
             this.gbxNro.Controls.Add(this.rdb5);
             this.gbxNro.ForeColor = System.Drawing.Color.LightGray;
-            this.gbxNro.Location = new System.Drawing.Point(39, 21);
+            this.gbxNro.Location = new System.Drawing.Point(29, 17);
+            this.gbxNro.Margin = new System.Windows.Forms.Padding(2);
             this.gbxNro.Name = "gbxNro";
-            this.gbxNro.Size = new System.Drawing.Size(87, 290);
+            this.gbxNro.Padding = new System.Windows.Forms.Padding(2);
+            this.gbxNro.Size = new System.Drawing.Size(65, 236);
             this.gbxNro.TabIndex = 10;
             this.gbxNro.TabStop = false;
             this.gbxNro.Text = "Preguntas:";
@@ -120,9 +125,10 @@
             this.rdb8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
             this.rdb8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdb8.ForeColor = System.Drawing.Color.Transparent;
-            this.rdb8.Location = new System.Drawing.Point(24, 207);
+            this.rdb8.Location = new System.Drawing.Point(18, 168);
+            this.rdb8.Margin = new System.Windows.Forms.Padding(2);
             this.rdb8.Name = "rdb8";
-            this.rdb8.Size = new System.Drawing.Size(34, 20);
+            this.rdb8.Size = new System.Drawing.Size(30, 17);
             this.rdb8.TabIndex = 7;
             this.rdb8.Text = "8";
             this.rdb8.UseVisualStyleBackColor = true;
@@ -137,9 +143,10 @@
             this.rdb10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
             this.rdb10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdb10.ForeColor = System.Drawing.Color.Transparent;
-            this.rdb10.Location = new System.Drawing.Point(24, 259);
+            this.rdb10.Location = new System.Drawing.Point(18, 210);
+            this.rdb10.Margin = new System.Windows.Forms.Padding(2);
             this.rdb10.Name = "rdb10";
-            this.rdb10.Size = new System.Drawing.Size(41, 20);
+            this.rdb10.Size = new System.Drawing.Size(36, 17);
             this.rdb10.TabIndex = 9;
             this.rdb10.Text = "10";
             this.rdb10.UseVisualStyleBackColor = true;
@@ -155,13 +162,15 @@
             this.rdb1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
             this.rdb1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdb1.ForeColor = System.Drawing.Color.Transparent;
-            this.rdb1.Location = new System.Drawing.Point(24, 25);
+            this.rdb1.Location = new System.Drawing.Point(18, 20);
+            this.rdb1.Margin = new System.Windows.Forms.Padding(2);
             this.rdb1.Name = "rdb1";
-            this.rdb1.Size = new System.Drawing.Size(34, 20);
+            this.rdb1.Size = new System.Drawing.Size(30, 17);
             this.rdb1.TabIndex = 0;
             this.rdb1.TabStop = true;
             this.rdb1.Text = "1";
             this.rdb1.UseVisualStyleBackColor = true;
+            this.rdb1.CheckedChanged += new System.EventHandler(this.rdb1_CheckedChanged);
             // 
             // rdb9
             // 
@@ -172,9 +181,10 @@
             this.rdb9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
             this.rdb9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdb9.ForeColor = System.Drawing.Color.Transparent;
-            this.rdb9.Location = new System.Drawing.Point(24, 233);
+            this.rdb9.Location = new System.Drawing.Point(18, 189);
+            this.rdb9.Margin = new System.Windows.Forms.Padding(2);
             this.rdb9.Name = "rdb9";
-            this.rdb9.Size = new System.Drawing.Size(34, 20);
+            this.rdb9.Size = new System.Drawing.Size(30, 17);
             this.rdb9.TabIndex = 8;
             this.rdb9.Text = "9";
             this.rdb9.UseVisualStyleBackColor = true;
@@ -189,9 +199,10 @@
             this.rdb2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
             this.rdb2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdb2.ForeColor = System.Drawing.Color.Transparent;
-            this.rdb2.Location = new System.Drawing.Point(24, 51);
+            this.rdb2.Location = new System.Drawing.Point(18, 41);
+            this.rdb2.Margin = new System.Windows.Forms.Padding(2);
             this.rdb2.Name = "rdb2";
-            this.rdb2.Size = new System.Drawing.Size(34, 20);
+            this.rdb2.Size = new System.Drawing.Size(30, 17);
             this.rdb2.TabIndex = 1;
             this.rdb2.Text = "2";
             this.rdb2.UseVisualStyleBackColor = true;
@@ -206,9 +217,10 @@
             this.rdb3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
             this.rdb3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdb3.ForeColor = System.Drawing.Color.Transparent;
-            this.rdb3.Location = new System.Drawing.Point(24, 77);
+            this.rdb3.Location = new System.Drawing.Point(18, 63);
+            this.rdb3.Margin = new System.Windows.Forms.Padding(2);
             this.rdb3.Name = "rdb3";
-            this.rdb3.Size = new System.Drawing.Size(34, 20);
+            this.rdb3.Size = new System.Drawing.Size(30, 17);
             this.rdb3.TabIndex = 2;
             this.rdb3.Text = "3";
             this.rdb3.UseVisualStyleBackColor = true;
@@ -223,9 +235,10 @@
             this.rdb7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
             this.rdb7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdb7.ForeColor = System.Drawing.Color.Transparent;
-            this.rdb7.Location = new System.Drawing.Point(24, 181);
+            this.rdb7.Location = new System.Drawing.Point(18, 147);
+            this.rdb7.Margin = new System.Windows.Forms.Padding(2);
             this.rdb7.Name = "rdb7";
-            this.rdb7.Size = new System.Drawing.Size(34, 20);
+            this.rdb7.Size = new System.Drawing.Size(30, 17);
             this.rdb7.TabIndex = 6;
             this.rdb7.Text = "7";
             this.rdb7.UseVisualStyleBackColor = true;
@@ -240,9 +253,10 @@
             this.rdb4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
             this.rdb4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdb4.ForeColor = System.Drawing.Color.Transparent;
-            this.rdb4.Location = new System.Drawing.Point(24, 103);
+            this.rdb4.Location = new System.Drawing.Point(18, 84);
+            this.rdb4.Margin = new System.Windows.Forms.Padding(2);
             this.rdb4.Name = "rdb4";
-            this.rdb4.Size = new System.Drawing.Size(34, 20);
+            this.rdb4.Size = new System.Drawing.Size(30, 17);
             this.rdb4.TabIndex = 3;
             this.rdb4.Text = "4";
             this.rdb4.UseVisualStyleBackColor = true;
@@ -257,9 +271,10 @@
             this.rdb6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
             this.rdb6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdb6.ForeColor = System.Drawing.Color.Transparent;
-            this.rdb6.Location = new System.Drawing.Point(24, 155);
+            this.rdb6.Location = new System.Drawing.Point(18, 126);
+            this.rdb6.Margin = new System.Windows.Forms.Padding(2);
             this.rdb6.Name = "rdb6";
-            this.rdb6.Size = new System.Drawing.Size(34, 20);
+            this.rdb6.Size = new System.Drawing.Size(30, 17);
             this.rdb6.TabIndex = 5;
             this.rdb6.Text = "6";
             this.rdb6.UseVisualStyleBackColor = true;
@@ -274,9 +289,10 @@
             this.rdb5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
             this.rdb5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdb5.ForeColor = System.Drawing.Color.Transparent;
-            this.rdb5.Location = new System.Drawing.Point(24, 129);
+            this.rdb5.Location = new System.Drawing.Point(18, 105);
+            this.rdb5.Margin = new System.Windows.Forms.Padding(2);
             this.rdb5.Name = "rdb5";
-            this.rdb5.Size = new System.Drawing.Size(34, 20);
+            this.rdb5.Size = new System.Drawing.Size(30, 17);
             this.rdb5.TabIndex = 4;
             this.rdb5.Text = "5";
             this.rdb5.UseVisualStyleBackColor = true;
@@ -288,18 +304,20 @@
             this.pnlTitulo.Controls.Add(this.lblID);
             this.pnlTitulo.Controls.Add(this.label2);
             this.pnlTitulo.Controls.Add(this.label1);
-            this.pnlTitulo.Location = new System.Drawing.Point(3, 12);
+            this.pnlTitulo.Location = new System.Drawing.Point(2, 10);
+            this.pnlTitulo.Margin = new System.Windows.Forms.Padding(2);
             this.pnlTitulo.Name = "pnlTitulo";
-            this.pnlTitulo.Size = new System.Drawing.Size(201, 79);
+            this.pnlTitulo.Size = new System.Drawing.Size(151, 64);
             this.pnlTitulo.TabIndex = 2;
             // 
             // lblNro
             // 
             this.lblNro.AutoSize = true;
             this.lblNro.ForeColor = System.Drawing.Color.Transparent;
-            this.lblNro.Location = new System.Drawing.Point(114, 49);
+            this.lblNro.Location = new System.Drawing.Point(86, 40);
+            this.lblNro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNro.Name = "lblNro";
-            this.lblNro.Size = new System.Drawing.Size(26, 16);
+            this.lblNro.Size = new System.Drawing.Size(22, 13);
             this.lblNro.TabIndex = 2;
             this.lblNro.Text = "nro";
             // 
@@ -307,9 +325,10 @@
             // 
             this.lblID.AutoSize = true;
             this.lblID.ForeColor = System.Drawing.Color.Transparent;
-            this.lblID.Location = new System.Drawing.Point(114, 21);
+            this.lblID.Location = new System.Drawing.Point(86, 17);
+            this.lblID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(20, 16);
+            this.lblID.Size = new System.Drawing.Size(18, 13);
             this.lblID.TabIndex = 1;
             this.lblID.Text = "ID";
             // 
@@ -317,9 +336,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(9, 49);
+            this.label2.Location = new System.Drawing.Point(7, 40);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 16);
+            this.label2.Size = new System.Drawing.Size(68, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "Pregunta N°:";
             // 
@@ -327,14 +347,16 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(9, 21);
+            this.label1.Location = new System.Drawing.Point(7, 17);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 16);
+            this.label1.Size = new System.Drawing.Size(47, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Prueba: ";
             // 
             // pnlPregunta
             // 
+            this.pnlPregunta.Controls.Add(this.labelClaveCorrecta);
             this.pnlPregunta.Controls.Add(this.txte);
             this.pnlPregunta.Controls.Add(this.txtd);
             this.pnlPregunta.Controls.Add(this.txtc);
@@ -343,59 +365,80 @@
             this.pnlPregunta.Controls.Add(this.groupBox2);
             this.pnlPregunta.Controls.Add(this.txtEnunciado);
             this.pnlPregunta.Controls.Add(btnGuardar);
-            this.pnlPregunta.Location = new System.Drawing.Point(212, 33);
+            this.pnlPregunta.Location = new System.Drawing.Point(159, 27);
+            this.pnlPregunta.Margin = new System.Windows.Forms.Padding(2);
             this.pnlPregunta.Name = "pnlPregunta";
-            this.pnlPregunta.Size = new System.Drawing.Size(586, 414);
+            this.pnlPregunta.Size = new System.Drawing.Size(440, 336);
             this.pnlPregunta.TabIndex = 3;
+            // 
+            // labelClaveCorrecta
+            // 
+            this.labelClaveCorrecta.AutoSize = true;
+            this.labelClaveCorrecta.ForeColor = System.Drawing.Color.LightGray;
+            this.labelClaveCorrecta.Location = new System.Drawing.Point(43, 110);
+            this.labelClaveCorrecta.Name = "labelClaveCorrecta";
+            this.labelClaveCorrecta.Size = new System.Drawing.Size(35, 13);
+            this.labelClaveCorrecta.TabIndex = 22;
+            this.labelClaveCorrecta.Text = "label3";
             // 
             // txte
             // 
             this.txte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.txte.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txte.Location = new System.Drawing.Point(179, 320);
+            this.txte.ForeColor = System.Drawing.Color.LightGray;
+            this.txte.Location = new System.Drawing.Point(135, 272);
+            this.txte.Margin = new System.Windows.Forms.Padding(2);
             this.txte.Name = "txte";
             this.txte.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.txte.Size = new System.Drawing.Size(276, 15);
+            this.txte.Size = new System.Drawing.Size(207, 13);
             this.txte.TabIndex = 21;
             // 
             // txtd
             // 
             this.txtd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.txtd.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtd.Location = new System.Drawing.Point(179, 278);
+            this.txtd.ForeColor = System.Drawing.Color.LightGray;
+            this.txtd.Location = new System.Drawing.Point(135, 242);
+            this.txtd.Margin = new System.Windows.Forms.Padding(2);
             this.txtd.Name = "txtd";
             this.txtd.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.txtd.Size = new System.Drawing.Size(276, 15);
+            this.txtd.Size = new System.Drawing.Size(207, 13);
             this.txtd.TabIndex = 20;
             // 
             // txtc
             // 
             this.txtc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.txtc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtc.Location = new System.Drawing.Point(179, 242);
+            this.txtc.ForeColor = System.Drawing.Color.LightGray;
+            this.txtc.Location = new System.Drawing.Point(135, 210);
+            this.txtc.Margin = new System.Windows.Forms.Padding(2);
             this.txtc.Name = "txtc";
             this.txtc.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.txtc.Size = new System.Drawing.Size(276, 15);
+            this.txtc.Size = new System.Drawing.Size(207, 13);
             this.txtc.TabIndex = 19;
             // 
             // txtb
             // 
             this.txtb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.txtb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtb.Location = new System.Drawing.Point(179, 205);
+            this.txtb.ForeColor = System.Drawing.Color.LightGray;
+            this.txtb.Location = new System.Drawing.Point(134, 182);
+            this.txtb.Margin = new System.Windows.Forms.Padding(2);
             this.txtb.Name = "txtb";
             this.txtb.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.txtb.Size = new System.Drawing.Size(276, 15);
+            this.txtb.Size = new System.Drawing.Size(207, 13);
             this.txtb.TabIndex = 18;
             // 
             // txta
             // 
             this.txta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.txta.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txta.Location = new System.Drawing.Point(179, 162);
+            this.txta.ForeColor = System.Drawing.Color.LightGray;
+            this.txta.Location = new System.Drawing.Point(135, 153);
+            this.txta.Margin = new System.Windows.Forms.Padding(2);
             this.txta.Name = "txta";
             this.txta.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.txta.Size = new System.Drawing.Size(276, 15);
+            this.txta.Size = new System.Drawing.Size(207, 13);
             this.txta.TabIndex = 17;
             // 
             // groupBox2
@@ -406,9 +449,11 @@
             this.groupBox2.Controls.Add(this.rdbc);
             this.groupBox2.Controls.Add(this.rdbd);
             this.groupBox2.ForeColor = System.Drawing.Color.LightGray;
-            this.groupBox2.Location = new System.Drawing.Point(61, 133);
+            this.groupBox2.Location = new System.Drawing.Point(46, 132);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(98, 242);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Size = new System.Drawing.Size(74, 173);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Alternativa:";
@@ -421,9 +466,10 @@
             this.rdbb.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
             this.rdbb.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdbb.ForeColor = System.Drawing.Color.LightGray;
-            this.rdbb.Location = new System.Drawing.Point(48, 67);
+            this.rdbb.Location = new System.Drawing.Point(36, 47);
+            this.rdbb.Margin = new System.Windows.Forms.Padding(2);
             this.rdbb.Name = "rdbb";
-            this.rdbb.Size = new System.Drawing.Size(35, 20);
+            this.rdbb.Size = new System.Drawing.Size(30, 17);
             this.rdbb.TabIndex = 11;
             this.rdbb.TabStop = true;
             this.rdbb.Text = "b";
@@ -437,9 +483,10 @@
             this.rdba.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
             this.rdba.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdba.ForeColor = System.Drawing.Color.LightGray;
-            this.rdba.Location = new System.Drawing.Point(48, 26);
+            this.rdba.Location = new System.Drawing.Point(37, 22);
+            this.rdba.Margin = new System.Windows.Forms.Padding(2);
             this.rdba.Name = "rdba";
-            this.rdba.Size = new System.Drawing.Size(35, 20);
+            this.rdba.Size = new System.Drawing.Size(30, 17);
             this.rdba.TabIndex = 10;
             this.rdba.TabStop = true;
             this.rdba.Text = "a";
@@ -453,9 +500,10 @@
             this.rdbe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
             this.rdbe.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdbe.ForeColor = System.Drawing.Color.LightGray;
-            this.rdbe.Location = new System.Drawing.Point(48, 182);
+            this.rdbe.Location = new System.Drawing.Point(36, 137);
+            this.rdbe.Margin = new System.Windows.Forms.Padding(2);
             this.rdbe.Name = "rdbe";
-            this.rdbe.Size = new System.Drawing.Size(35, 20);
+            this.rdbe.Size = new System.Drawing.Size(30, 17);
             this.rdbe.TabIndex = 14;
             this.rdbe.TabStop = true;
             this.rdbe.Text = "e";
@@ -469,9 +517,10 @@
             this.rdbc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
             this.rdbc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdbc.ForeColor = System.Drawing.Color.LightGray;
-            this.rdbc.Location = new System.Drawing.Point(49, 104);
+            this.rdbc.Location = new System.Drawing.Point(37, 77);
+            this.rdbc.Margin = new System.Windows.Forms.Padding(2);
             this.rdbc.Name = "rdbc";
-            this.rdbc.Size = new System.Drawing.Size(34, 20);
+            this.rdbc.Size = new System.Drawing.Size(30, 17);
             this.rdbc.TabIndex = 12;
             this.rdbc.TabStop = true;
             this.rdbc.Text = "c";
@@ -485,9 +534,10 @@
             this.rdbd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
             this.rdbd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rdbd.ForeColor = System.Drawing.Color.LightGray;
-            this.rdbd.Location = new System.Drawing.Point(49, 140);
+            this.rdbd.Location = new System.Drawing.Point(37, 107);
+            this.rdbd.Margin = new System.Windows.Forms.Padding(2);
             this.rdbd.Name = "rdbd";
-            this.rdbd.Size = new System.Drawing.Size(35, 20);
+            this.rdbd.Size = new System.Drawing.Size(30, 17);
             this.rdbd.TabIndex = 13;
             this.rdbd.TabStop = true;
             this.rdbd.Text = "d";
@@ -497,24 +547,27 @@
             // 
             this.txtEnunciado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.txtEnunciado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEnunciado.Location = new System.Drawing.Point(61, 22);
+            this.txtEnunciado.ForeColor = System.Drawing.Color.LightGray;
+            this.txtEnunciado.Location = new System.Drawing.Point(46, 18);
+            this.txtEnunciado.Margin = new System.Windows.Forms.Padding(2);
             this.txtEnunciado.Multiline = true;
             this.txtEnunciado.Name = "txtEnunciado";
             this.txtEnunciado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtEnunciado.Size = new System.Drawing.Size(394, 90);
+            this.txtEnunciado.Size = new System.Drawing.Size(296, 73);
             this.txtEnunciado.TabIndex = 15;
             // 
             // frmVerPrueba
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.pnlPregunta);
             this.Controls.Add(this.pnlTitulo);
             this.Controls.Add(this.pnlNavegacion);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmVerPrueba";
             this.Text = "frmVerPrueba";
             this.pnlNavegacion.ResumeLayout(false);
@@ -561,5 +614,6 @@
         private System.Windows.Forms.TextBox txtd;
         private System.Windows.Forms.TextBox txtc;
         private System.Windows.Forms.TextBox txtb;
+        private System.Windows.Forms.Label labelClaveCorrecta;
     }
 }
