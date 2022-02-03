@@ -79,6 +79,7 @@
             this.buttonRendirExam.Text = "Rendir Examen";
             this.buttonRendirExam.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonRendirExam.UseVisualStyleBackColor = true;
+            this.buttonRendirExam.Click += new System.EventHandler(this.buttonRendirExam_Click);
             // 
             // buttonDatos
             // 

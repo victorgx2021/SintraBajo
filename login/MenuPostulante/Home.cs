@@ -77,5 +77,18 @@ namespace login
             this.panelContenido.Tag = frm;
             frm.Show();
         }
+
+        private void buttonRendirExam_Click(object sender, EventArgs e)
+        {
+            if (this.panelContenido.Controls.Count > 0)
+                this.panelContenido.Controls.RemoveAt(0);
+            FormExamenPostulante frm = new FormExamenPostulante("0001");
+            frm.TopLevel = false;//No es un formulario de nivel superior (es formulario dentro de otro)
+            //fh.FormBorderStyle = FormBorderStyle.None;
+            //frm.Dock = DockStyle.Fill;
+            this.panelContenido.Controls.Add(frm);
+            this.panelContenido.Tag = frm;
+            frm.Show();
+        }
     }
 }
