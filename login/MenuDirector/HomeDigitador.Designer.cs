@@ -63,7 +63,7 @@
             // 
             this.BtnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("BtnMinimizar.Image")));
             this.BtnMinimizar.Location = new System.Drawing.Point(683, 2);
-            this.BtnMinimizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnMinimizar.Margin = new System.Windows.Forms.Padding(2);
             this.BtnMinimizar.Name = "BtnMinimizar";
             this.BtnMinimizar.Size = new System.Drawing.Size(27, 29);
             this.BtnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -75,7 +75,7 @@
             // 
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
             this.btnCerrar.Location = new System.Drawing.Point(715, 2);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(26, 29);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -92,7 +92,7 @@
             this.panel1.Controls.Add(this.buttonDatos);
             this.panel1.Controls.Add(this.buttonSubirExamen);
             this.panel1.Location = new System.Drawing.Point(2, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(172, 462);
             this.panel1.TabIndex = 2;
@@ -107,13 +107,14 @@
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(-1, 362);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(172, 78);
             this.button1.TabIndex = 7;
             this.button1.Text = "Publicar Notas";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // buttonRendirExam
             // 
@@ -125,7 +126,7 @@
             this.buttonRendirExam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.buttonRendirExam.Image = ((System.Drawing.Image)(resources.GetObject("buttonRendirExam.Image")));
             this.buttonRendirExam.Location = new System.Drawing.Point(-2, 194);
-            this.buttonRendirExam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonRendirExam.Margin = new System.Windows.Forms.Padding(2);
             this.buttonRendirExam.Name = "buttonRendirExam";
             this.buttonRendirExam.Size = new System.Drawing.Size(172, 78);
             this.buttonRendirExam.TabIndex = 6;
@@ -139,7 +140,7 @@
             this.panelUser.Controls.Add(this.lblApellidos);
             this.panelUser.Controls.Add(this.lblNombre);
             this.panelUser.Location = new System.Drawing.Point(0, 30);
-            this.panelUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelUser.Margin = new System.Windows.Forms.Padding(2);
             this.panelUser.Name = "panelUser";
             this.panelUser.Size = new System.Drawing.Size(172, 78);
             this.panelUser.TabIndex = 2;
@@ -184,7 +185,7 @@
             this.buttonDatos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.buttonDatos.Image = ((System.Drawing.Image)(resources.GetObject("buttonDatos.Image")));
             this.buttonDatos.Location = new System.Drawing.Point(0, 111);
-            this.buttonDatos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonDatos.Margin = new System.Windows.Forms.Padding(2);
             this.buttonDatos.Name = "buttonDatos";
             this.buttonDatos.Size = new System.Drawing.Size(172, 78);
             this.buttonDatos.TabIndex = 5;
@@ -203,7 +204,7 @@
             this.buttonSubirExamen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.buttonSubirExamen.Image = ((System.Drawing.Image)(resources.GetObject("buttonSubirExamen.Image")));
             this.buttonSubirExamen.Location = new System.Drawing.Point(-2, 278);
-            this.buttonSubirExamen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSubirExamen.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSubirExamen.Name = "buttonSubirExamen";
             this.buttonSubirExamen.Size = new System.Drawing.Size(172, 78);
             this.buttonSubirExamen.TabIndex = 4;
@@ -215,7 +216,7 @@
             // pnlContenido
             // 
             this.pnlContenido.Location = new System.Drawing.Point(179, 32);
-            this.pnlContenido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlContenido.Margin = new System.Windows.Forms.Padding(2);
             this.pnlContenido.Name = "pnlContenido";
             this.pnlContenido.Size = new System.Drawing.Size(562, 410);
             this.pnlContenido.TabIndex = 4;
@@ -230,7 +231,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "HomeDigitador";
             this.Text = "HomeDigitador";
             this.panel2.ResumeLayout(false);

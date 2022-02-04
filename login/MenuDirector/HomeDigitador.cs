@@ -71,5 +71,18 @@ namespace login
             this.pnlContenido.Tag = frm;
             frm.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (this.pnlContenido.Controls.Count > 0)
+                this.pnlContenido.Controls.RemoveAt(0);
+            FromPublicarNotas frm = new FromPublicarNotas();
+            frm.TopLevel = false;//No es un formulario de nivel superior (es formulario dentro de otro)
+            //fh.FormBorderStyle = FormBorderStyle.None;
+            //frm.Dock = DockStyle.Fill;
+            this.pnlContenido.Controls.Add(frm);
+            this.pnlContenido.Tag = frm;
+            frm.Show();
+        }      
     }
 }

@@ -25,13 +25,21 @@ namespace login
         
         public void Ver(object sender, EventArgs e)
         {
-            coneccion.Open();
-            string consulta = "select * from PRUEBA";
-            SqlDataAdapter adaptador = new SqlDataAdapter(consulta, coneccion);
-            DataTable dt = new DataTable();
-            adaptador.Fill(dt);
-            dataGridView1.DataSource = dt;
-            coneccion.Close();
+            try
+            {
+                coneccion.Open();
+                string consulta = "select * from PRUEBA";
+                SqlDataAdapter adaptador = new SqlDataAdapter(consulta, coneccion);
+                DataTable dt = new DataTable();
+                adaptador.Fill(dt);
+                dataGridView1.DataSource = dt;
+                coneccion.Close();
+            }
+            catch (Exception error)
+            {
+                coneccion.Close();
+                MessageBox.Show(error.Message);
+            }
 
         }
         private void frmExamen_Load(object sender, EventArgs e)
