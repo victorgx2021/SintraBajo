@@ -13,6 +13,7 @@ namespace login
 {
     public partial class FormExamenPostulante : Form
     {
+        private string DNI;
         private string idExamen;
         private int preguntaAnterior = 1;
         private string[,] Formulacion = new string[10, 2];
@@ -22,10 +23,14 @@ namespace login
 
         static Conexion cnx = new Conexion();
         SqlConnection coneccion = cnx.getConection();
-        public FormExamenPostulante(string pIdExamen)
+        public FormExamenPostulante(string pIdExamen, string pDNI)
         {
             InitializeComponent();
             idExamen = pIdExamen;
+            DNI= pDNI;
+            lblDNI.Text = pDNI;
+            lblID.Text = pIdExamen;
+
         }
 
         private int textoAnumero(string alternativa) { 
@@ -323,6 +328,35 @@ namespace login
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            for(int i = 0; i < 10; i++)
+            {
+                try
+                {
+                    coneccion.Open();
+                    SqlCommand comando = new SqlCommand("exec usp_insertar_respuesta_postulante @NroPregunta,@Respuesta,@DNIpostulante,@IdPrueba", coneccion);
+                    comando.Parameters.AddWithValue("@NroPregunta", i+1);
+                    comando.Parameters.AddWithValue("@Respuesta", respuestas[i]);
+                    comando.Parameters.AddWithValue("@DNIpostulante", DNI);
+                    comando.Parameters.AddWithValue("@IdPrueba", lblID.Text);
+                    comando.ExecuteNonQuery();
+                    coneccion.Close();
+                }
+                catch (Exception ex)
+                {
+                    coneccion.Close();
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            MessageBox.Show("Datos registrados exitosamente");
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }

@@ -82,7 +82,7 @@ namespace login
         {
             if (this.panelContenido.Controls.Count > 0)
                 this.panelContenido.Controls.RemoveAt(0);
-            FormExamenPostulante frm = new FormExamenPostulante("0001");
+            FormExamenPostulante frm = new FormExamenPostulante("0001",DNI);
             frm.TopLevel = false;//No es un formulario de nivel superior (es formulario dentro de otro)
             //fh.FormBorderStyle = FormBorderStyle.None;
             //frm.Dock = DockStyle.Fill;
