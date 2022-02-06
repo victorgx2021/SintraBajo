@@ -56,11 +56,12 @@
             btnCalificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             btnCalificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             btnCalificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnCalificar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             btnCalificar.ForeColor = System.Drawing.Color.LightGray;
-            btnCalificar.Location = new System.Drawing.Point(308, 282);
-            btnCalificar.Margin = new System.Windows.Forms.Padding(2);
+            btnCalificar.Location = new System.Drawing.Point(338, 394);
+            btnCalificar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             btnCalificar.Name = "btnCalificar";
-            btnCalificar.Size = new System.Drawing.Size(63, 29);
+            btnCalificar.Size = new System.Drawing.Size(84, 36);
             btnCalificar.TabIndex = 6;
             btnCalificar.Text = "Calificar";
             btnCalificar.UseVisualStyleBackColor = false;
@@ -88,11 +89,12 @@
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvNotas.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvNotas.EnableHeadersVisualStyles = false;
-            this.dgvNotas.Location = new System.Drawing.Point(27, 74);
+            this.dgvNotas.Location = new System.Drawing.Point(36, 96);
+            this.dgvNotas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvNotas.Name = "dgvNotas";
             this.dgvNotas.RowHeadersVisible = false;
             this.dgvNotas.RowHeadersWidth = 51;
-            this.dgvNotas.Size = new System.Drawing.Size(344, 184);
+            this.dgvNotas.Size = new System.Drawing.Size(361, 273);
             this.dgvNotas.TabIndex = 4;
             // 
             // panel2
@@ -104,17 +106,18 @@
             this.panel2.Controls.Add(this.btnCerrar);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(402, 30);
+            this.panel2.Size = new System.Drawing.Size(450, 37);
             this.panel2.TabIndex = 5;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(344, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(361, 1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(27, 29);
+            this.pictureBox1.Size = new System.Drawing.Size(36, 36);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
@@ -122,10 +125,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(376, 2);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(403, 1);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(26, 29);
+            this.pictureBox2.Size = new System.Drawing.Size(35, 36);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
@@ -134,10 +137,10 @@
             // BtnMinimizar
             // 
             this.BtnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("BtnMinimizar.Image")));
-            this.BtnMinimizar.Location = new System.Drawing.Point(683, 2);
-            this.BtnMinimizar.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnMinimizar.Location = new System.Drawing.Point(911, 2);
+            this.BtnMinimizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnMinimizar.Name = "BtnMinimizar";
-            this.BtnMinimizar.Size = new System.Drawing.Size(27, 29);
+            this.BtnMinimizar.Size = new System.Drawing.Size(36, 36);
             this.BtnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnMinimizar.TabIndex = 12;
             this.BtnMinimizar.TabStop = false;
@@ -145,10 +148,10 @@
             // btnCerrar
             // 
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(715, 2);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrar.Location = new System.Drawing.Point(953, 2);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(26, 29);
+            this.btnCerrar.Size = new System.Drawing.Size(35, 36);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 11;
             this.btnCerrar.TabStop = false;
@@ -156,38 +159,40 @@
             // lblID
             // 
             this.lblID.AutoSize = true;
+            this.lblID.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblID.ForeColor = System.Drawing.Color.Transparent;
-            this.lblID.Location = new System.Drawing.Point(103, 47);
-            this.lblID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblID.Location = new System.Drawing.Point(128, 58);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(18, 13);
+            this.lblID.Size = new System.Drawing.Size(28, 21);
             this.lblID.TabIndex = 8;
             this.lblID.Text = "ID";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(24, 47);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.LightGray;
+            this.label1.Location = new System.Drawing.Point(42, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.Size = new System.Drawing.Size(80, 21);
             this.label1.TabIndex = 7;
             this.label1.Text = "Prueba: ";
             // 
             // FormCalificarExamen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.ClientSize = new System.Drawing.Size(402, 322);
+            this.ClientSize = new System.Drawing.Size(450, 450);
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.label1);
             this.Controls.Add(btnCalificar);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dgvNotas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormCalificarExamen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormCalificarExamen";
             ((System.ComponentModel.ISupportInitialize)(this.dgvNotas)).EndInit();
             this.panel2.ResumeLayout(false);

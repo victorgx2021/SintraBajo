@@ -34,33 +34,38 @@
             // 
             // lblComunicado
             // 
-            this.lblComunicado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblComunicado.ForeColor = System.Drawing.Color.LightGray;
-            this.lblComunicado.Location = new System.Drawing.Point(58, 155);
+            this.lblComunicado.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblComunicado.ForeColor = System.Drawing.Color.Silver;
+            this.lblComunicado.Location = new System.Drawing.Point(76, 185);
+            this.lblComunicado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblComunicado.Name = "lblComunicado";
-            this.lblComunicado.Size = new System.Drawing.Size(443, 73);
+            this.lblComunicado.Size = new System.Drawing.Size(591, 90);
             this.lblComunicado.TabIndex = 2;
             this.lblComunicado.Text = "Su calificación no está disponible, vuelva más tarde.";
+            this.lblComunicado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblnota
             // 
-            this.lblnota.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnota.ForeColor = System.Drawing.Color.LightGray;
-            this.lblnota.Location = new System.Drawing.Point(208, 237);
+            this.lblnota.Font = new System.Drawing.Font("Century Gothic", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnota.ForeColor = System.Drawing.Color.Silver;
+            this.lblnota.Location = new System.Drawing.Point(265, 285);
+            this.lblnota.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblnota.Name = "lblnota";
-            this.lblnota.Size = new System.Drawing.Size(138, 85);
+            this.lblnota.Size = new System.Drawing.Size(208, 131);
             this.lblnota.TabIndex = 3;
             this.lblnota.Text = "00";
+            this.lblnota.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormComunicadoNota
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.ClientSize = new System.Drawing.Size(560, 451);
+            this.ClientSize = new System.Drawing.Size(747, 555);
             this.Controls.Add(this.lblnota);
             this.Controls.Add(this.lblComunicado);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormComunicadoNota";
             this.Text = "FormComunicadoNota";
             this.Load += new System.EventHandler(this.FormComunicadoNota_Load);

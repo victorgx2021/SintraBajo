@@ -49,10 +49,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
-    <Compile Include="FormComunicadoNota.cs">
+    <Compile Include="MenuPostulante\FormComunicadoNota.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormComunicadoNota.Designer.cs">
+    <Compile Include="MenuPostulante\FormComunicadoNota.Designer.cs">
       <DependentUpon>FormComunicadoNota.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuPostulante\FormComunicadoExamen.cs">
@@ -103,6 +103,9 @@
     <Compile Include="MenuDirector\Menu examen\frmVerPrueba.designer.cs">
       <DependentUpon>frmVerPrueba.cs</DependentUpon>
     </Compile>
+    <Compile Include="RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Registro\DatosPersonales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,7 +144,7 @@
     <Compile Include="Registro\VerificarRecibo.Designer.cs">
       <DependentUpon>VerificarRecibo.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FormComunicadoNota.resx">
+    <EmbeddedResource Include="MenuPostulante\FormComunicadoNota.resx">
       <DependentUpon>FormComunicadoNota.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPostulante\FormComunicadoExamen.resx">

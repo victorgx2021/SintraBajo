@@ -38,22 +38,24 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(84, 118);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.LightGray;
+            this.label2.Location = new System.Drawing.Point(128, 192);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 18);
+            this.label2.Size = new System.Drawing.Size(45, 23);
             this.label2.TabIndex = 15;
             this.label2.Text = "DNI";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LightGray;
-            this.label1.Location = new System.Drawing.Point(84, 63);
+            this.label1.Location = new System.Drawing.Point(122, 125);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 18);
+            this.label1.Size = new System.Drawing.Size(150, 23);
             this.label1.TabIndex = 14;
             this.label1.Text = "Nro. de recibo";
             // 
@@ -64,11 +66,12 @@
             this.btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btn.Location = new System.Drawing.Point(142, 169);
+            this.btn.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn.ForeColor = System.Drawing.Color.LightGray;
+            this.btn.Location = new System.Drawing.Point(205, 255);
+            this.btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(126, 23);
+            this.btn.Size = new System.Drawing.Size(168, 28);
             this.btn.TabIndex = 13;
             this.btn.Text = "Comprobar recibo";
             this.btn.UseVisualStyleBackColor = false;
@@ -76,30 +79,33 @@
             // 
             // txtDNI
             // 
-            this.txtDNI.Location = new System.Drawing.Point(198, 118);
+            this.txtDNI.Location = new System.Drawing.Point(280, 192);
+            this.txtDNI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDNI.Name = "txtDNI";
-            this.txtDNI.Size = new System.Drawing.Size(113, 20);
+            this.txtDNI.Size = new System.Drawing.Size(149, 22);
             this.txtDNI.TabIndex = 12;
             // 
             // txtRecibo
             // 
-            this.txtRecibo.Location = new System.Drawing.Point(198, 63);
+            this.txtRecibo.Location = new System.Drawing.Point(280, 125);
+            this.txtRecibo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRecibo.Name = "txtRecibo";
-            this.txtRecibo.Size = new System.Drawing.Size(113, 20);
+            this.txtRecibo.Size = new System.Drawing.Size(149, 22);
             this.txtRecibo.TabIndex = 11;
             // 
             // VerificarRecibo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.ClientSize = new System.Drawing.Size(394, 254);
+            this.ClientSize = new System.Drawing.Size(583, 399);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn);
             this.Controls.Add(this.txtDNI);
             this.Controls.Add(this.txtRecibo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "VerificarRecibo";
             this.Text = "VerificarRecibo";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.VerificarRecibo_FormClosed);
