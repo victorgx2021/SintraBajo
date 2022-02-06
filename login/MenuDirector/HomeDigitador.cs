@@ -63,7 +63,7 @@ namespace login
         {
             if (this.pnlContenido.Controls.Count > 0)
                 this.pnlContenido.Controls.RemoveAt(0);
-            frmExamen frm = new frmExamen(DNI);
+            frmExamen frm = new frmExamen(DNI, this);
             frm.TopLevel = false;//No es un formulario de nivel superior (es formulario dentro de otro)
             //fh.FormBorderStyle = FormBorderStyle.None;
             //frm.Dock = DockStyle.Fill;
@@ -76,7 +76,7 @@ namespace login
         {
             if (this.pnlContenido.Controls.Count > 0)
                 this.pnlContenido.Controls.RemoveAt(0);
-            FromPublicarNotas frm = new FromPublicarNotas();
+            FromPublicarNotas frm = new FromPublicarNotas(this);
             frm.TopLevel = false;//No es un formulario de nivel superior (es formulario dentro de otro)
             //fh.FormBorderStyle = FormBorderStyle.None;
             //frm.Dock = DockStyle.Fill;
@@ -84,5 +84,15 @@ namespace login
             this.pnlContenido.Tag = frm;
             frm.Show();
         }      
+
+        public void OcultarForm()
+        {
+            this.Hide();
+        }
+
+        public void MostrarForm()
+        {
+            this.Show();
+        }
     }
 }

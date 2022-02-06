@@ -18,7 +18,9 @@ namespace login
 
         DataGridViewButtonColumn colBotones = new DataGridViewButtonColumn();
 
-        public FromPublicarNotas()
+        HomeDigitador frmPadre;
+
+        public FromPublicarNotas(HomeDigitador pFrmPadre)
         {
             InitializeComponent();
 
@@ -27,6 +29,7 @@ namespace login
             colBotones.Text = "Ver...";
             colBotones.Width = 40;
             colBotones.UseColumnTextForButtonValue = true;
+            this.frmPadre = pFrmPadre;
         }
 
         public void Ver()
@@ -83,7 +86,9 @@ namespace login
                 string id = dataGridView1.Rows[row].Cells[1].Value.ToString();
 
                 FormCalificarExamen frm = new FormCalificarExamen(id);
-                frm.Show();
+                frmPadre.OcultarForm();
+                frm.ShowDialog();
+                frmPadre.MostrarForm();
             }
         }
     }

@@ -16,11 +16,12 @@ namespace login
         static Conexion cnx = new Conexion();
         SqlConnection coneccion = cnx.getConection();
         private string DNI;
-
-        public frmExamen(string pDNI)
+        HomeDigitador frmPadre;
+        public frmExamen(string pDNI, HomeDigitador pFormPadre)
         {
             InitializeComponent();
             DNI = pDNI;
+            frmPadre = pFormPadre;
         }
         
         public void Ver(object sender, EventArgs e)
@@ -40,7 +41,7 @@ namespace login
                 coneccion.Close();
                 MessageBox.Show(error.Message);
             }
-
+            RedimensionarColumnas();
         }
         private void frmExamen_Load(object sender, EventArgs e)
         { 
@@ -120,7 +121,7 @@ namespace login
                     comando.Parameters.AddWithValue("@HORA", hora);
                     comando.Parameters.AddWithValue("@DNI", DNI);
                     SqlDataReader lector = comando.ExecuteReader();
-                    MessageBox.Show("Sus datos fueron registrados exitosamente.", "Datos Registrados");
+                    MessageBox.Show("El examen fue creado exitosamente.", "Examen Registrado");
 
                     coneccion.Close();
                     Ver(sender, e);
@@ -134,7 +135,9 @@ namespace login
                 if (aux)
                 {
                     frmVerPrueba formVerPrueba = new frmVerPrueba(ProcesarId(id));
-                    formVerPrueba.Show();
+                    frmPadre.OcultarForm();
+                    formVerPrueba.ShowDialog();
+                    frmPadre.MostrarForm();
                 }
             }
 
@@ -142,7 +145,16 @@ namespace login
 
         private void frmExamen_FormClosing(object sender, FormClosingEventArgs e)
         {
-            MessageBox.Show("CERRANDO..");
+            //MessageBox.Show("CERRANDO..");
+        }
+
+        private void RedimensionarColumnas()
+        {
+            dataGridView1.Columns[0].Width = 84;
+            //dataGridView1.Columns[1].Width = 134;
+            //dataGridView1.Columns[2].Width = 134;
+            //dataGridView1.Columns[3].Width = 134;
+            //dataGridView1.Columns[4].Width = 134;
         }
     }
 }
