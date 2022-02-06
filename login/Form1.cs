@@ -53,6 +53,7 @@ namespace login
             }
             catch (Exception ex)
             {
+                coneccion.Close();
                 MessageBox.Show(ex.Message);
             }
 

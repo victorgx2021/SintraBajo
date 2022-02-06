@@ -56,10 +56,10 @@
             this.panel1.Controls.Add(this.buttonDatos);
             this.panel1.Controls.Add(this.buttonVerNota);
             this.panel1.Controls.Add(this.panelUser);
-            this.panel1.Location = new System.Drawing.Point(2, 26);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(3, 32);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(182, 462);
+            this.panel1.Size = new System.Drawing.Size(243, 569);
             this.panel1.TabIndex = 0;
             // 
             // buttonRendirExam
@@ -68,17 +68,18 @@
             this.buttonRendirExam.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(213)))), ((int)(((byte)(152)))));
             this.buttonRendirExam.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(100)))));
             this.buttonRendirExam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRendirExam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRendirExam.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRendirExam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.buttonRendirExam.Image = ((System.Drawing.Image)(resources.GetObject("buttonRendirExam.Image")));
-            this.buttonRendirExam.Location = new System.Drawing.Point(-2, 232);
-            this.buttonRendirExam.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonRendirExam.Location = new System.Drawing.Point(-3, 286);
+            this.buttonRendirExam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonRendirExam.Name = "buttonRendirExam";
-            this.buttonRendirExam.Size = new System.Drawing.Size(182, 114);
+            this.buttonRendirExam.Size = new System.Drawing.Size(243, 140);
             this.buttonRendirExam.TabIndex = 6;
             this.buttonRendirExam.Text = "Rendir Examen";
             this.buttonRendirExam.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonRendirExam.UseVisualStyleBackColor = true;
+            this.buttonRendirExam.Click += new System.EventHandler(this.buttonRendirExam_Click);
             // 
             // buttonDatos
             // 
@@ -86,13 +87,13 @@
             this.buttonDatos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(213)))), ((int)(((byte)(152)))));
             this.buttonDatos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(100)))));
             this.buttonDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDatos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDatos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.buttonDatos.Image = ((System.Drawing.Image)(resources.GetObject("buttonDatos.Image")));
-            this.buttonDatos.Location = new System.Drawing.Point(-1, 115);
-            this.buttonDatos.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonDatos.Location = new System.Drawing.Point(-1, 142);
+            this.buttonDatos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonDatos.Name = "buttonDatos";
-            this.buttonDatos.Size = new System.Drawing.Size(182, 114);
+            this.buttonDatos.Size = new System.Drawing.Size(243, 140);
             this.buttonDatos.TabIndex = 5;
             this.buttonDatos.Text = "Datos  Personales";
             this.buttonDatos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -105,17 +106,18 @@
             this.buttonVerNota.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(213)))), ((int)(((byte)(152)))));
             this.buttonVerNota.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(180)))), ((int)(((byte)(100)))));
             this.buttonVerNota.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonVerNota.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonVerNota.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVerNota.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.buttonVerNota.Image = ((System.Drawing.Image)(resources.GetObject("buttonVerNota.Image")));
-            this.buttonVerNota.Location = new System.Drawing.Point(-2, 349);
-            this.buttonVerNota.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonVerNota.Location = new System.Drawing.Point(-3, 430);
+            this.buttonVerNota.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonVerNota.Name = "buttonVerNota";
-            this.buttonVerNota.Size = new System.Drawing.Size(182, 114);
+            this.buttonVerNota.Size = new System.Drawing.Size(243, 140);
             this.buttonVerNota.TabIndex = 4;
             this.buttonVerNota.Text = "Ver Nota";
             this.buttonVerNota.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonVerNota.UseVisualStyleBackColor = true;
+            this.buttonVerNota.Click += new System.EventHandler(this.buttonVerNota_Click);
             // 
             // panelUser
             // 
@@ -124,18 +126,18 @@
             this.panelUser.Controls.Add(this.lblApellidos);
             this.panelUser.Controls.Add(this.lblNombre);
             this.panelUser.Location = new System.Drawing.Point(0, 2);
-            this.panelUser.Margin = new System.Windows.Forms.Padding(2);
+            this.panelUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelUser.Name = "panelUser";
-            this.panelUser.Size = new System.Drawing.Size(182, 114);
+            this.panelUser.Size = new System.Drawing.Size(243, 140);
             this.panelUser.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 24);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(4, 30);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(60, 65);
+            this.pictureBox1.Size = new System.Drawing.Size(80, 80);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -145,12 +147,11 @@
             this.lblApellidos.AutoSize = true;
             this.lblApellidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(213)))), ((int)(((byte)(152)))));
             this.lblApellidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblApellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApellidos.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.lblApellidos.Location = new System.Drawing.Point(64, 64);
-            this.lblApellidos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblApellidos.Location = new System.Drawing.Point(85, 79);
             this.lblApellidos.Name = "lblApellidos";
-            this.lblApellidos.Size = new System.Drawing.Size(46, 18);
+            this.lblApellidos.Size = new System.Drawing.Size(62, 21);
             this.lblApellidos.TabIndex = 7;
             this.lblApellidos.Text = "label2";
             // 
@@ -159,12 +160,11 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(213)))), ((int)(((byte)(152)))));
             this.lblNombre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.lblNombre.Location = new System.Drawing.Point(64, 37);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNombre.Location = new System.Drawing.Point(85, 46);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(46, 18);
+            this.lblNombre.Size = new System.Drawing.Size(62, 21);
             this.lblNombre.TabIndex = 2;
             this.lblNombre.Text = "label1";
             // 
@@ -175,17 +175,18 @@
             this.panel2.Controls.Add(this.btnCerrar);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(750, 30);
+            this.panel2.Size = new System.Drawing.Size(1000, 37);
             this.panel2.TabIndex = 1;
             // 
             // BtnMinimizar
             // 
             this.BtnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("BtnMinimizar.Image")));
-            this.BtnMinimizar.Location = new System.Drawing.Point(683, 2);
-            this.BtnMinimizar.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnMinimizar.Location = new System.Drawing.Point(911, 2);
+            this.BtnMinimizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnMinimizar.Name = "BtnMinimizar";
-            this.BtnMinimizar.Size = new System.Drawing.Size(27, 29);
+            this.BtnMinimizar.Size = new System.Drawing.Size(36, 36);
             this.BtnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnMinimizar.TabIndex = 12;
             this.BtnMinimizar.TabStop = false;
@@ -194,10 +195,10 @@
             // btnCerrar
             // 
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(715, 2);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrar.Location = new System.Drawing.Point(953, 2);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(26, 29);
+            this.btnCerrar.Size = new System.Drawing.Size(35, 36);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 11;
             this.btnCerrar.TabStop = false;
@@ -205,22 +206,23 @@
             // 
             // panelContenido
             // 
-            this.panelContenido.Location = new System.Drawing.Point(189, 36);
-            this.panelContenido.Margin = new System.Windows.Forms.Padding(2);
+            this.panelContenido.Location = new System.Drawing.Point(252, 44);
+            this.panelContenido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelContenido.Name = "panelContenido";
-            this.panelContenido.Size = new System.Drawing.Size(561, 453);
+            this.panelContenido.Size = new System.Drawing.Size(748, 558);
             this.panelContenido.TabIndex = 3;
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.ClientSize = new System.Drawing.Size(750, 488);
+            this.ClientSize = new System.Drawing.Size(1000, 601);
             this.Controls.Add(this.panelContenido);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
