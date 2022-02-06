@@ -10,8 +10,8 @@ namespace login
     
     public class Conexion
     {
-        public SqlConnection coneccion = new SqlConnection("Data Source = localhost\\SQLEXPRESS; Initial Catalog = bdAdmision; Integrated Security = true ");
-        //private SqlConnection coneccion = new SqlConnection("Data Source = DESKTOP-9QP4SEF; Initial Catalog = bdAdmision; Integrated Security = true ");
+        //public SqlConnection coneccion = new SqlConnection("Data Source = localhost\\SQLEXPRESS; Initial Catalog = bdAdmision; Integrated Security = true ");
+        private SqlConnection coneccion = new SqlConnection("Data Source = DESKTOP-9QP4SEF; Initial Catalog = bdAdmision; Integrated Security = true ");
 
         public SqlConnection getConection()
         {

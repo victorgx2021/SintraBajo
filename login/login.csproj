@@ -49,6 +49,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="FormComunicadoNota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormComunicadoNota.Designer.cs">
+      <DependentUpon>FormComunicadoNota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPostulante\FormComunicadoExamen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPostulante\FormComunicadoExamen.Designer.cs">
+      <DependentUpon>FormComunicadoExamen.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuDirector\Calificar Notas\FormCalificarExamen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +141,12 @@
     <Compile Include="Registro\VerificarRecibo.Designer.cs">
       <DependentUpon>VerificarRecibo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormComunicadoNota.resx">
+      <DependentUpon>FormComunicadoNota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPostulante\FormComunicadoExamen.resx">
+      <DependentUpon>FormComunicadoExamen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuDirector\Calificar Notas\FormCalificarExamen.resx">
       <DependentUpon>FormCalificarExamen.cs</DependentUpon>
     </EmbeddedResource>

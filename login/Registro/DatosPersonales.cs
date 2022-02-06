@@ -89,7 +89,6 @@ namespace login
                     //SELECT NroRecibo, DNIpostulante FROM RECIBO WHERE NroRecibo = @nroRecibo AND DNIpostulante=@dnipostulante;
                     SqlDataReader lector = comando.ExecuteReader();
                     MessageBox.Show("Sus datos fueron registrados exitosamente.", "Datos Registrados");
-                    
                     Close();
                     
                 }

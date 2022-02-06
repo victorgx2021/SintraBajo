@@ -117,6 +117,7 @@
             this.buttonVerNota.Text = "Ver Nota";
             this.buttonVerNota.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonVerNota.UseVisualStyleBackColor = true;
+            this.buttonVerNota.Click += new System.EventHandler(this.buttonVerNota_Click);
             // 
             // panelUser
             // 
