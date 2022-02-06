@@ -23,14 +23,17 @@ namespace login
 
         static Conexion cnx = new Conexion();
         SqlConnection coneccion = cnx.getConection();
-        public FormExamenPostulante(string pIdExamen, string pDNI)
+
+        Home frmPadre;
+        public FormExamenPostulante(string pIdExamen, string pDNI, Home pFrmPadre)
         {
+
             InitializeComponent();
             idExamen = pIdExamen;
             DNI= pDNI;
             lblDNI.Text = pDNI;
             lblID.Text = pIdExamen;
-
+            frmPadre = pFrmPadre;
         }
 
         private int textoAnumero(string alternativa) { 
@@ -368,7 +371,8 @@ namespace login
                         MessageBox.Show(ex.Message);
                     }
                 }
-                MessageBox.Show("Datos registrados exitosamente");
+                MessageBox.Show("Examen enviado exitosamente");
+                frmPadre.mostrarDatos();
             }
         }
 

@@ -1,7 +1,7 @@
 use bdAdmision
 set dateformat dmy
 
-insert into DIGITADOR_UNSAAC values('70458332','Paredes','D','V',PWDENCRYPT('123456'))
+insert into DIGITADOR_UNSAAC values('70458332','Paredes','Denos','Victor',PWDENCRYPT('123456'))
 
 --SELECT DNIdigitador, Contraseña FROM DIGITADOR_UNSAAC WHERE DNIdigitador = '70458332' AND PWDCOMPARE( '123456', Contraseña)=1;
 
@@ -144,10 +144,29 @@ insert into RECIBO values('0019','11/01/2022','48307248','0001')
 insert into RECIBO values('0020','11/01/2022','76047182','0001')
 
 --=============================================================================
-
+insert into POSTULANTE values('46611292','Puma','Huamani','Glina','01/02/2002',PWDENCRYPT('123456'),0)
+insert into POSTULANTE values('73958392','Rocca','Huanca','Maria ',	'20/01/2001',PWDENCRYPT('123456'),0)
+insert into POSTULANTE values('73303501','Fernandez','Puma','Sebastian','12/05/2002',PWDENCRYPT('123456'),0)
+insert into POSTULANTE values('48588518','Veslasquez','Nina' , 'Juan ' ,'03/11/1999',PWDENCRYPT('123456'),0)
+insert into POSTULANTE values('71498764','Yana','Cuno ','Yamilet' ,	'05/07/2000',PWDENCRYPT('123456'),0)
+insert into POSTULANTE values('48212479','Uscca','Diaz','Yudith' ,'15/07/2002',PWDENCRYPT('123456'),0)
+insert into POSTULANTE values('73352912','Meza	','Ttupa' , 'Jose' ,'28/06/1998',PWDENCRYPT('123456'),0)
+insert into POSTULANTE values('76041482','Sotelo','Quispe' , 'Hilda' ,	'29/10/1998',PWDENCRYPT('123456'),0)
+insert into POSTULANTE values('71798391','Leon','Mercado' , 'Carlos' ,	'30/12/2000',PWDENCRYPT('123456'),0)
+insert into POSTULANTE values('75979441','Quispe','Masias' , 'Rodrigo' ,'14/02/2000',PWDENCRYPT('123456'),0)
+insert into POSTULANTE values('76049994','Alegria','Mendoza' , 'Jesu' ,	'18/01/1999',PWDENCRYPT('123456'),0)
+insert into POSTULANTE values('73632611','Hinojosa','Huarca' , 'Fernanda' ,	'13/02/1998',PWDENCRYPT('123456'),0)
+insert into POSTULANTE values('70044082','Mora','Huichi' , 'Alex' ,	'23/01/2001',PWDENCRYPT('123456'),0)
+insert into POSTULANTE values('47087660','Urquizo','Carbajal' , 'Victor' ,'05/07/2000',PWDENCRYPT('123456'),0)
+insert into POSTULANTE values('76207696','Condori','Quispe' , 'Axel ' ,	'25/11/2001',PWDENCRYPT('123456'),0)
+insert into POSTULANTE values('71594285','Huaman','Cabrera' , 'Yonathan' ,'28/06/2000',PWDENCRYPT('123456'),0)
+insert into POSTULANTE values('48492873','Macedo','Quispe' , 'Victor' ,	'29/10/1999',PWDENCRYPT('123456'),0)
+insert into POSTULANTE values('43063555','Grovas','Lima' , 'Alan' ,	'18/01/2001',PWDENCRYPT('123456'),0)
+insert into POSTULANTE values('48307248','Ayte','Alvarez' , 'Franszua' ,'07/09/2000',PWDENCRYPT('123456'),0)--
+insert into POSTULANTE values('76047182','Rojas	','Mayo' , 'Elvira' ,'15/08/1998',PWDENCRYPT('123456'),0)--
 --=============================================================================
 
---exec usp_insertar_prueba -1,'46611292','0001'
+exec usp_insertar_prueba -1,'46611292','0001'
 
 exec usp_insertar_respuesta_postulante 1,'e','46611292','0001'
 exec usp_insertar_respuesta_postulante 2,'e','46611292','0001'
@@ -159,19 +178,228 @@ exec usp_insertar_respuesta_postulante 7,'b','46611292','0001'
 exec usp_insertar_respuesta_postulante 8,'c','46611292','0001'
 exec usp_insertar_respuesta_postulante 9,'e','46611292','0001'
 exec usp_insertar_respuesta_postulante 10,'b','46611292','0001'
+------------------------------------------------------------------
+exec usp_insertar_prueba -1,'73958392','0001'
 
---exec usp_insertar_prueba -1,'12345678','0001'
+exec usp_insertar_respuesta_postulante 1,'e','73958392','0001'
+exec usp_insertar_respuesta_postulante 2,'e','73958392','0001'
+exec usp_insertar_respuesta_postulante 3,'e','73958392','0001'
+exec usp_insertar_respuesta_postulante 4,'b','73958392','0001'
+exec usp_insertar_respuesta_postulante 5,'a','73958392','0001'
+exec usp_insertar_respuesta_postulante 6,'e','73958392','0001'
+exec usp_insertar_respuesta_postulante 7,'b','73958392','0001'
+exec usp_insertar_respuesta_postulante 8,'e','73958392','0001'
+exec usp_insertar_respuesta_postulante 9,'e','73958392','0001'
+exec usp_insertar_respuesta_postulante 10,'b','73958392','0001'
+------------------------------------------------------------------
+exec usp_insertar_prueba -1,'73303501','0001'
 
-exec usp_insertar_respuesta_postulante 1,'e','12345678','0001'
-exec usp_insertar_respuesta_postulante 2,'d','12345678','0001'
-exec usp_insertar_respuesta_postulante 3,'d','12345678','0001'
-exec usp_insertar_respuesta_postulante 4,'d','12345678','0001'
-exec usp_insertar_respuesta_postulante 5,'d','12345678','0001'
-exec usp_insertar_respuesta_postulante 6,'d','12345678','0001'
-exec usp_insertar_respuesta_postulante 7,'d','12345678','0001'
-exec usp_insertar_respuesta_postulante 8,'d','12345678','0001'
-exec usp_insertar_respuesta_postulante 9,'d','12345678','0001'
-exec usp_insertar_respuesta_postulante 10,'d','12345678','0001'
+exec usp_insertar_respuesta_postulante 1,'e','73303501','0001'  
+exec usp_insertar_respuesta_postulante 2,'e','73303501','0001'
+exec usp_insertar_respuesta_postulante 3,'e','73303501','0001'
+exec usp_insertar_respuesta_postulante 4,'e','73303501','0001'
+exec usp_insertar_respuesta_postulante 5,'a','73303501','0001'
+exec usp_insertar_respuesta_postulante 6,'e','73303501','0001'
+exec usp_insertar_respuesta_postulante 7,'e','73303501','0001'
+exec usp_insertar_respuesta_postulante 8,'c','73303501','0001'
+exec usp_insertar_respuesta_postulante 9,'e','73303501','0001'
+exec usp_insertar_respuesta_postulante 10,'a','73303501','0001'
+------------------------------------------------------------------
+exec usp_insertar_prueba -1,'48588518','0001'
+
+exec usp_insertar_respuesta_postulante 1,'e','48588518','0001'
+exec usp_insertar_respuesta_postulante 2,'e','48588518','0001'
+exec usp_insertar_respuesta_postulante 3,'e','48588518','0001'
+exec usp_insertar_respuesta_postulante 4,'a','48588518','0001'
+exec usp_insertar_respuesta_postulante 5,'a','48588518','0001'
+exec usp_insertar_respuesta_postulante 6,'e','48588518','0001'
+exec usp_insertar_respuesta_postulante 7,'b','48588518','0001'
+exec usp_insertar_respuesta_postulante 8,'c','48588518','0001'
+exec usp_insertar_respuesta_postulante 9,'e','48588518','0001'
+exec usp_insertar_respuesta_postulante 10,'b','48588518','0001'
+------------------------------------------------------------------ 
+exec usp_insertar_prueba -1,'71498764','0001'					   
+																   
+exec usp_insertar_respuesta_postulante 1,'e','71498764','0001'	   
+exec usp_insertar_respuesta_postulante 2,'e','71498764','0001'	   
+exec usp_insertar_respuesta_postulante 3,'e','71498764','0001'	   
+exec usp_insertar_respuesta_postulante 4,'a','71498764','0001'	   
+exec usp_insertar_respuesta_postulante 5,'e','71498764','0001'	   
+exec usp_insertar_respuesta_postulante 6,'e','71498764','0001'	   
+exec usp_insertar_respuesta_postulante 7,'b','71498764','0001'	   
+exec usp_insertar_respuesta_postulante 8,'c','71498764','0001'	   
+exec usp_insertar_respuesta_postulante 9,'b','71498764','0001'	   
+exec usp_insertar_respuesta_postulante 10,'b','71498764','0001'	   
+------------------------------------------------------------------ 
+exec usp_insertar_prueba -1,'48212479','0001'					   
+
+exec usp_insertar_respuesta_postulante 1,'c','48212479','0001'
+exec usp_insertar_respuesta_postulante 2,'e','48212479','0001'
+exec usp_insertar_respuesta_postulante 3,'e','48212479','0001'
+exec usp_insertar_respuesta_postulante 4,'a','48212479','0001'
+exec usp_insertar_respuesta_postulante 5,'a','48212479','0001'
+exec usp_insertar_respuesta_postulante 6,'a','48212479','0001'
+exec usp_insertar_respuesta_postulante 7,'b','48212479','0001'
+exec usp_insertar_respuesta_postulante 8,'d','48212479','0001'
+exec usp_insertar_respuesta_postulante 9,'e','48212479','0001'
+exec usp_insertar_respuesta_postulante 10,'e','48212479','0001'
+------------------------------------------------------------------
+exec usp_insertar_prueba -1,'73352912','0001'					  
+																  
+exec usp_insertar_respuesta_postulante 1,'d','73352912','0001'	  
+exec usp_insertar_respuesta_postulante 2,'e','73352912','0001'	  
+exec usp_insertar_respuesta_postulante 3,'d','73352912','0001'	  
+exec usp_insertar_respuesta_postulante 4,'a','73352912','0001'	  
+exec usp_insertar_respuesta_postulante 5,'c','73352912','0001'	  
+exec usp_insertar_respuesta_postulante 6,'e','73352912','0001'	  
+exec usp_insertar_respuesta_postulante 7,'b','73352912','0001'	  
+exec usp_insertar_respuesta_postulante 8,'c','73352912','0001'	  
+exec usp_insertar_respuesta_postulante 9,'e','73352912','0001'	  
+exec usp_insertar_respuesta_postulante 10,'a','73352912','0001'	  
+------------------------------------------------------------------
+exec usp_insertar_prueba -1,'76041482','0001'
+
+exec usp_insertar_respuesta_postulante 1,'e','76041482','0001'
+exec usp_insertar_respuesta_postulante 2,'e','76041482','0001'
+exec usp_insertar_respuesta_postulante 3,'e','76041482','0001'
+exec usp_insertar_respuesta_postulante 4,'a','76041482','0001'
+exec usp_insertar_respuesta_postulante 5,'a','76041482','0001'
+exec usp_insertar_respuesta_postulante 6,'e','76041482','0001'
+exec usp_insertar_respuesta_postulante 7,'b','76041482','0001'
+exec usp_insertar_respuesta_postulante 8,'c','76041482','0001'
+exec usp_insertar_respuesta_postulante 9,'e','76041482','0001'
+exec usp_insertar_respuesta_postulante 10,'b','76041482','0001'
+------------------------------------------------------------------ 
+exec usp_insertar_prueba -1,'71798391','0001'					   
+																   
+exec usp_insertar_respuesta_postulante 1,'e','71798391','0001'	   
+exec usp_insertar_respuesta_postulante 2,'d','71798391','0001'	   
+exec usp_insertar_respuesta_postulante 3,'e','71798391','0001'	   
+exec usp_insertar_respuesta_postulante 4,'a','71798391','0001'	   
+exec usp_insertar_respuesta_postulante 5,'a','71798391','0001'	   
+exec usp_insertar_respuesta_postulante 6,'e','71798391','0001'	   
+exec usp_insertar_respuesta_postulante 7,'b','71798391','0001'	   
+exec usp_insertar_respuesta_postulante 8,'c','71798391','0001'	   
+exec usp_insertar_respuesta_postulante 9,'e','71798391','0001'
+exec usp_insertar_respuesta_postulante 10,'b','71798391','0001'
+------------------------------------------------------------------
+exec usp_insertar_prueba -1,'75979441','0001'
+
+exec usp_insertar_respuesta_postulante 1,'e','75979441','0001'
+exec usp_insertar_respuesta_postulante 2,'e','75979441','0001'
+exec usp_insertar_respuesta_postulante 3,'e','75979441','0001'
+exec usp_insertar_respuesta_postulante 4,'c','75979441','0001'
+exec usp_insertar_respuesta_postulante 5,'a','75979441','0001'
+exec usp_insertar_respuesta_postulante 6,'e','75979441','0001'
+exec usp_insertar_respuesta_postulante 7,'e','75979441','0001'
+exec usp_insertar_respuesta_postulante 8,'c','75979441','0001'
+exec usp_insertar_respuesta_postulante 9,'e','75979441','0001'
+exec usp_insertar_respuesta_postulante 10,'b','75979441','0001'
+------------------------------------------------------------------ 
+exec usp_insertar_prueba -1,'76049994','0001'					   
+																   
+exec usp_insertar_respuesta_postulante 1,'e','76049994','0001'	   
+exec usp_insertar_respuesta_postulante 2,'e','76049994','0001'	   
+exec usp_insertar_respuesta_postulante 3,'e','76049994','0001'	   
+exec usp_insertar_respuesta_postulante 4,'c','76049994','0001'	   
+exec usp_insertar_respuesta_postulante 5,'a','76049994','0001'	   
+exec usp_insertar_respuesta_postulante 6,'e','76049994','0001'	   
+exec usp_insertar_respuesta_postulante 7,'b','76049994','0001'
+exec usp_insertar_respuesta_postulante 8,'d','76049994','0001'
+exec usp_insertar_respuesta_postulante 9,'e','76049994','0001'
+exec usp_insertar_respuesta_postulante 10,'e','76049994','0001'
+------------------------------------------------------------------
+exec usp_insertar_prueba -1,'73632611','0001'
+
+exec usp_insertar_respuesta_postulante 1,'e','73632611','0001'
+exec usp_insertar_respuesta_postulante 2,'a','73632611','0001'
+exec usp_insertar_respuesta_postulante 3,'e','73632611','0001'
+exec usp_insertar_respuesta_postulante 4,'e','73632611','0001'
+exec usp_insertar_respuesta_postulante 5,'a','73632611','0001'
+exec usp_insertar_respuesta_postulante 6,'e','73632611','0001'
+exec usp_insertar_respuesta_postulante 7,'c','73632611','0001'
+exec usp_insertar_respuesta_postulante 8,'c','73632611','0001'
+exec usp_insertar_respuesta_postulante 9,'e','73632611','0001'
+exec usp_insertar_respuesta_postulante 10,'e','73632611','0001'
+------------------------------------------------------------------ 
+exec usp_insertar_prueba -1,'70044082','0001'					   
+																   
+exec usp_insertar_respuesta_postulante 1,'e','70044082','0001'	   
+exec usp_insertar_respuesta_postulante 2,'e','70044082','0001'	   
+exec usp_insertar_respuesta_postulante 3,'e','70044082','0001'	   
+exec usp_insertar_respuesta_postulante 4,'e','70044082','0001'	   
+exec usp_insertar_respuesta_postulante 5,'a','70044082','0001'
+exec usp_insertar_respuesta_postulante 6,'e','70044082','0001'
+exec usp_insertar_respuesta_postulante 7,'c','70044082','0001'
+exec usp_insertar_respuesta_postulante 8,'c','70044082','0001'
+exec usp_insertar_respuesta_postulante 9,'e','70044082','0001'
+exec usp_insertar_respuesta_postulante 10,'b','70044082','0001'
+------------------------------------------------------------------
+exec usp_insertar_prueba -1,'47087660','0001'
+
+exec usp_insertar_respuesta_postulante 1,'e','47087660','0001'
+exec usp_insertar_respuesta_postulante 2,'c','47087660','0001'
+exec usp_insertar_respuesta_postulante 3,'e','47087660','0001'
+exec usp_insertar_respuesta_postulante 4,'a','47087660','0001'
+exec usp_insertar_respuesta_postulante 5,'a','47087660','0001'
+exec usp_insertar_respuesta_postulante 6,'e','47087660','0001'
+exec usp_insertar_respuesta_postulante 7,'b','47087660','0001'
+exec usp_insertar_respuesta_postulante 8,'c','47087660','0001'
+exec usp_insertar_respuesta_postulante 9,'e','47087660','0001'
+exec usp_insertar_respuesta_postulante 10,'b','47087660','0001'
+------------------------------------------------------------------
+exec usp_insertar_prueba -1,'76207696','0001'					  
+																  
+exec usp_insertar_respuesta_postulante 1,'e','76207696','0001'	  
+exec usp_insertar_respuesta_postulante 2,'e','76207696','0001'	  
+exec usp_insertar_respuesta_postulante 3,'e','76207696','0001'
+exec usp_insertar_respuesta_postulante 4,'a','76207696','0001'
+exec usp_insertar_respuesta_postulante 5,'b','76207696','0001'
+exec usp_insertar_respuesta_postulante 6,'e','76207696','0001'
+exec usp_insertar_respuesta_postulante 7,'b','76207696','0001'
+exec usp_insertar_respuesta_postulante 8,'c','76207696','0001'
+exec usp_insertar_respuesta_postulante 9,'e','76207696','0001'
+exec usp_insertar_respuesta_postulante 10,'b','76207696','0001'
+------------------------------------------------------------------
+exec usp_insertar_prueba -1,'71594285','0001'
+
+exec usp_insertar_respuesta_postulante 1,'c','71594285','0001'
+exec usp_insertar_respuesta_postulante 2,'e','71594285','0001'
+exec usp_insertar_respuesta_postulante 3,'e','71594285','0001'
+exec usp_insertar_respuesta_postulante 4,'a','71594285','0001'
+exec usp_insertar_respuesta_postulante 5,'a','71594285','0001'
+exec usp_insertar_respuesta_postulante 6,'e','71594285','0001'
+exec usp_insertar_respuesta_postulante 7,'b','71594285','0001'
+exec usp_insertar_respuesta_postulante 8,'c','71594285','0001'
+exec usp_insertar_respuesta_postulante 9,'a','71594285','0001'
+exec usp_insertar_respuesta_postulante 10,'b','71594285','0001'
+------------------------------------------------------------------ 
+exec usp_insertar_prueba -1,'48492873','0001'
+
+exec usp_insertar_respuesta_postulante 1,'a','48492873','0001'
+exec usp_insertar_respuesta_postulante 2,'e','48492873','0001'
+exec usp_insertar_respuesta_postulante 3,'e','48492873','0001'
+exec usp_insertar_respuesta_postulante 4,'a','48492873','0001'
+exec usp_insertar_respuesta_postulante 5,'a','48492873','0001'
+exec usp_insertar_respuesta_postulante 6,'e','48492873','0001'
+exec usp_insertar_respuesta_postulante 7,'a','48492873','0001'
+exec usp_insertar_respuesta_postulante 8,'c','48492873','0001'
+exec usp_insertar_respuesta_postulante 9,'e','48492873','0001'
+exec usp_insertar_respuesta_postulante 10,'b','48492873','0001'
+------------------------------------------------------------------
+exec usp_insertar_prueba -1,'43063555','0001'
+
+exec usp_insertar_respuesta_postulante 1,'e','43063555','0001'
+exec usp_insertar_respuesta_postulante 2,'e','43063555','0001'
+exec usp_insertar_respuesta_postulante 3,'e','43063555','0001'
+exec usp_insertar_respuesta_postulante 4,'a','43063555','0001'
+exec usp_insertar_respuesta_postulante 5,'a','43063555','0001'
+exec usp_insertar_respuesta_postulante 6,'e','43063555','0001'
+exec usp_insertar_respuesta_postulante 7,'b','43063555','0001'
+exec usp_insertar_respuesta_postulante 8,'c','43063555','0001'
+exec usp_insertar_respuesta_postulante 9,'e','43063555','0001'
+exec usp_insertar_respuesta_postulante 10,'b','43063555','0001'
+------------------------------------------------------------------
 
 select * from RESPUESTA_POSTULANTE
 select * from PRUEBA_POSTULANTE

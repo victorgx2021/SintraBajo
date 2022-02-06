@@ -23,6 +23,7 @@ namespace login
         SqlConnection coneccion = cnx.getConection();
         public Home(string pDNI, string pAPaterno, string pAMaterno, string pNombre, bool pAnulacion, string pApellido)
         {
+
             InitializeComponent();
             lblNombre.Text = pNombre;
             lblApellidos.Text = pApellido;
@@ -55,6 +56,10 @@ namespace login
         {
             return Anulacion;
         }
+        public void mostrarDatos()
+        {
+            buttonDatos.PerformClick();
+        }
         private void BtnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -67,7 +72,7 @@ namespace login
 
         private void Home_Load(object sender, EventArgs e)
         {
-            buttonDatos.PerformClick();
+            //mostrarDatos();
         }
 
         private void buttonDatos_Click(object sender, EventArgs e)
@@ -109,7 +114,7 @@ namespace login
             {
                 if (this.panelContenido.Controls.Count > 0)
                     this.panelContenido.Controls.RemoveAt(0);
-                FormExamenPostulante frm = new FormExamenPostulante("0001", DNI);
+                FormExamenPostulante frm = new FormExamenPostulante("0001", DNI,this);
                 frm.TopLevel = false;//No es un formulario de nivel superior (es formulario dentro de otro)
                                      //fh.FormBorderStyle = FormBorderStyle.None;
                                      //frm.Dock = DockStyle.Fill;
