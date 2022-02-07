@@ -23,14 +23,17 @@ namespace login
 
         static Conexion cnx = new Conexion();
         SqlConnection coneccion = cnx.getConection();
-        public FormExamenPostulante(string pIdExamen, string pDNI)
+
+        Home frmPadre;
+        public FormExamenPostulante(string pIdExamen, string pDNI, Home pFrmPadre)
         {
+
             InitializeComponent();
             idExamen = pIdExamen;
             DNI= pDNI;
             lblDNI.Text = pDNI;
             lblID.Text = pIdExamen;
-
+            frmPadre = pFrmPadre;
         }
 
         private int textoAnumero(string alternativa) { 
@@ -329,26 +332,48 @@ namespace login
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            for(int i = 0; i < 10; i++)
+            bool aux = false;
+            try
             {
-                try
-                {
-                    coneccion.Open();
-                    SqlCommand comando = new SqlCommand("exec usp_insertar_respuesta_postulante @NroPregunta,@Respuesta,@DNIpostulante,@IdPrueba", coneccion);
-                    comando.Parameters.AddWithValue("@NroPregunta", i+1);
-                    comando.Parameters.AddWithValue("@Respuesta", respuestas[i]);
-                    comando.Parameters.AddWithValue("@DNIpostulante", DNI);
-                    comando.Parameters.AddWithValue("@IdPrueba", lblID.Text);
-                    comando.ExecuteNonQuery();
-                    coneccion.Close();
-                }
-                catch (Exception ex)
-                {
-                    coneccion.Close();
-                    MessageBox.Show(ex.Message);
-                }
+                coneccion.Open();
+                SqlCommand comando = new SqlCommand("exec usp_insertar_prueba -1,@dni,@IdPrueba", coneccion);
+                comando.Parameters.AddWithValue("@dni", DNI);
+                comando.Parameters.AddWithValue("@IdPrueba", lblID.Text);
+                comando.ExecuteNonQuery();
+                coneccion.Close();
+                aux=true;
             }
-            MessageBox.Show("Datos registrados exitosamente");
+            catch (Exception ex)
+            {
+                coneccion.Close();
+                MessageBox.Show(ex.Message);
+            }
+
+            if (aux)
+            {
+
+                for (int i = 0; i < 10; i++)
+                {
+                    try
+                    {
+                        coneccion.Open();
+                        SqlCommand comando = new SqlCommand("exec usp_insertar_respuesta_postulante @NroPregunta,@Respuesta,@DNIpostulante,@IdPrueba", coneccion);
+                        comando.Parameters.AddWithValue("@NroPregunta", i + 1);
+                        comando.Parameters.AddWithValue("@Respuesta", respuestas[i]);
+                        comando.Parameters.AddWithValue("@DNIpostulante", DNI);
+                        comando.Parameters.AddWithValue("@IdPrueba", lblID.Text);
+                        comando.ExecuteNonQuery();
+                        coneccion.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        coneccion.Close();
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+                MessageBox.Show("Examen enviado exitosamente");
+                frmPadre.mostrarDatos();
+            }
         }
 
         private void label3_Click(object sender, EventArgs e)

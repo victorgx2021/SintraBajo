@@ -48,10 +48,10 @@
             // 
             this.lblnota.Font = new System.Drawing.Font("Century Gothic", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblnota.ForeColor = System.Drawing.Color.Silver;
-            this.lblnota.Location = new System.Drawing.Point(265, 285);
+            this.lblnota.Location = new System.Drawing.Point(242, 275);
             this.lblnota.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblnota.Name = "lblnota";
-            this.lblnota.Size = new System.Drawing.Size(208, 131);
+            this.lblnota.Size = new System.Drawing.Size(240, 131);
             this.lblnota.TabIndex = 3;
             this.lblnota.Text = "00";
             this.lblnota.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -65,7 +65,7 @@
             this.Controls.Add(this.lblnota);
             this.Controls.Add(this.lblComunicado);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormComunicadoNota";
             this.Text = "FormComunicadoNota";
             this.Load += new System.EventHandler(this.FormComunicadoNota_Load);

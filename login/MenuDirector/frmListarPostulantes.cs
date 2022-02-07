@@ -68,9 +68,9 @@ namespace login
         private void RedimensionarColumnas()
         {
             dataGridView1.Columns[0].Width = 80;
-            dataGridView1.Columns[1].Width = 170;
-            dataGridView1.Columns[2].Width = 170;
-            dataGridView1.Columns[3].Width = 246;
+            dataGridView1.Columns[1].Width = 140;
+            dataGridView1.Columns[2].Width = 140;
+            dataGridView1.Columns[3].Width = 140;
         }
     }
 }

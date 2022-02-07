@@ -46,11 +46,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pnlNavegacion = new System.Windows.Forms.Panel();
             this.gbxNro = new System.Windows.Forms.GroupBox();
-            this.rdbe = new CustomControls.RJControls.RJRadioButton();
-            this.rdbd = new CustomControls.RJControls.RJRadioButton();
-            this.rdbc = new CustomControls.RJControls.RJRadioButton();
-            this.rdbb = new CustomControls.RJControls.RJRadioButton();
-            this.rdba = new CustomControls.RJControls.RJRadioButton();
             this.rdb10 = new CustomControls.RJControls.RJRadioButton();
             this.rdb8 = new CustomControls.RJControls.RJRadioButton();
             this.rdb9 = new CustomControls.RJControls.RJRadioButton();
@@ -61,6 +56,11 @@
             this.rdb3 = new CustomControls.RJControls.RJRadioButton();
             this.rdb2 = new CustomControls.RJControls.RJRadioButton();
             this.rdb1 = new CustomControls.RJControls.RJRadioButton();
+            this.rdbe = new CustomControls.RJControls.RJRadioButton();
+            this.rdbd = new CustomControls.RJControls.RJRadioButton();
+            this.rdbc = new CustomControls.RJControls.RJRadioButton();
+            this.rdbb = new CustomControls.RJControls.RJRadioButton();
+            this.rdba = new CustomControls.RJControls.RJRadioButton();
             btnGuardar = new System.Windows.Forms.Button();
             this.pnlPregunta.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -104,6 +104,7 @@
             // 
             this.txtd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.txtd.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtd.Enabled = false;
             this.txtd.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtd.ForeColor = System.Drawing.Color.LightGray;
             this.txtd.Location = new System.Drawing.Point(153, 369);
@@ -136,6 +137,7 @@
             // 
             this.txtb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.txtb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtb.Enabled = false;
             this.txtb.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtb.ForeColor = System.Drawing.Color.LightGray;
             this.txtb.Location = new System.Drawing.Point(153, 234);
@@ -150,6 +152,7 @@
             // 
             this.txta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.txta.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txta.Enabled = false;
             this.txta.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txta.ForeColor = System.Drawing.Color.LightGray;
             this.txta.Location = new System.Drawing.Point(153, 169);
@@ -164,6 +167,7 @@
             // 
             this.txtc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.txtc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtc.Enabled = false;
             this.txtc.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtc.ForeColor = System.Drawing.Color.LightGray;
             this.txtc.Location = new System.Drawing.Point(153, 304);
@@ -178,6 +182,7 @@
             // 
             this.txte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.txte.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txte.Enabled = false;
             this.txte.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txte.ForeColor = System.Drawing.Color.LightGray;
             this.txte.Location = new System.Drawing.Point(153, 434);
@@ -192,6 +197,7 @@
             // 
             this.txtEnunciado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.txtEnunciado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEnunciado.Enabled = false;
             this.txtEnunciado.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEnunciado.ForeColor = System.Drawing.Color.LightGray;
             this.txtEnunciado.Location = new System.Drawing.Point(24, 22);
@@ -311,86 +317,6 @@
             this.gbxNro.TabIndex = 10;
             this.gbxNro.TabStop = false;
             this.gbxNro.Text = "Pregunta";
-            // 
-            // rdbe
-            // 
-            this.rdbe.AutoSize = true;
-            this.rdbe.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.rdbe.ForeColor = System.Drawing.Color.LightGray;
-            this.rdbe.Location = new System.Drawing.Point(26, 294);
-            this.rdbe.MinimumSize = new System.Drawing.Size(0, 21);
-            this.rdbe.Name = "rdbe";
-            this.rdbe.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.rdbe.Size = new System.Drawing.Size(50, 24);
-            this.rdbe.TabIndex = 32;
-            this.rdbe.TabStop = true;
-            this.rdbe.Text = "e";
-            this.rdbe.UnCheckedColor = System.Drawing.Color.Gray;
-            this.rdbe.UseVisualStyleBackColor = true;
-            // 
-            // rdbd
-            // 
-            this.rdbd.AutoSize = true;
-            this.rdbd.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.rdbd.ForeColor = System.Drawing.Color.LightGray;
-            this.rdbd.Location = new System.Drawing.Point(26, 229);
-            this.rdbd.MinimumSize = new System.Drawing.Size(0, 21);
-            this.rdbd.Name = "rdbd";
-            this.rdbd.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.rdbd.Size = new System.Drawing.Size(50, 24);
-            this.rdbd.TabIndex = 31;
-            this.rdbd.TabStop = true;
-            this.rdbd.Text = "d";
-            this.rdbd.UnCheckedColor = System.Drawing.Color.Gray;
-            this.rdbd.UseVisualStyleBackColor = true;
-            // 
-            // rdbc
-            // 
-            this.rdbc.AutoSize = true;
-            this.rdbc.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.rdbc.ForeColor = System.Drawing.Color.LightGray;
-            this.rdbc.Location = new System.Drawing.Point(26, 164);
-            this.rdbc.MinimumSize = new System.Drawing.Size(0, 21);
-            this.rdbc.Name = "rdbc";
-            this.rdbc.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.rdbc.Size = new System.Drawing.Size(50, 24);
-            this.rdbc.TabIndex = 30;
-            this.rdbc.TabStop = true;
-            this.rdbc.Text = "c";
-            this.rdbc.UnCheckedColor = System.Drawing.Color.Gray;
-            this.rdbc.UseVisualStyleBackColor = true;
-            // 
-            // rdbb
-            // 
-            this.rdbb.AutoSize = true;
-            this.rdbb.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.rdbb.ForeColor = System.Drawing.Color.LightGray;
-            this.rdbb.Location = new System.Drawing.Point(26, 94);
-            this.rdbb.MinimumSize = new System.Drawing.Size(0, 21);
-            this.rdbb.Name = "rdbb";
-            this.rdbb.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.rdbb.Size = new System.Drawing.Size(50, 24);
-            this.rdbb.TabIndex = 29;
-            this.rdbb.TabStop = true;
-            this.rdbb.Text = "b";
-            this.rdbb.UnCheckedColor = System.Drawing.Color.Gray;
-            this.rdbb.UseVisualStyleBackColor = true;
-            // 
-            // rdba
-            // 
-            this.rdba.AutoSize = true;
-            this.rdba.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.rdba.ForeColor = System.Drawing.Color.LightGray;
-            this.rdba.Location = new System.Drawing.Point(26, 29);
-            this.rdba.MinimumSize = new System.Drawing.Size(0, 21);
-            this.rdba.Name = "rdba";
-            this.rdba.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.rdba.Size = new System.Drawing.Size(50, 24);
-            this.rdba.TabIndex = 28;
-            this.rdba.TabStop = true;
-            this.rdba.Text = "a";
-            this.rdba.UnCheckedColor = System.Drawing.Color.Gray;
-            this.rdba.UseVisualStyleBackColor = true;
             // 
             // rdb10
             // 
@@ -560,6 +486,86 @@
             this.rdb1.UnCheckedColor = System.Drawing.Color.Gray;
             this.rdb1.UseVisualStyleBackColor = true;
             this.rdb1.CheckedChanged += new System.EventHandler(this.rdb1_CheckedChanged);
+            // 
+            // rdbe
+            // 
+            this.rdbe.AutoSize = true;
+            this.rdbe.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdbe.ForeColor = System.Drawing.Color.LightGray;
+            this.rdbe.Location = new System.Drawing.Point(26, 294);
+            this.rdbe.MinimumSize = new System.Drawing.Size(0, 21);
+            this.rdbe.Name = "rdbe";
+            this.rdbe.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.rdbe.Size = new System.Drawing.Size(50, 24);
+            this.rdbe.TabIndex = 32;
+            this.rdbe.TabStop = true;
+            this.rdbe.Text = "e";
+            this.rdbe.UnCheckedColor = System.Drawing.Color.Gray;
+            this.rdbe.UseVisualStyleBackColor = true;
+            // 
+            // rdbd
+            // 
+            this.rdbd.AutoSize = true;
+            this.rdbd.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdbd.ForeColor = System.Drawing.Color.LightGray;
+            this.rdbd.Location = new System.Drawing.Point(26, 229);
+            this.rdbd.MinimumSize = new System.Drawing.Size(0, 21);
+            this.rdbd.Name = "rdbd";
+            this.rdbd.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.rdbd.Size = new System.Drawing.Size(50, 24);
+            this.rdbd.TabIndex = 31;
+            this.rdbd.TabStop = true;
+            this.rdbd.Text = "d";
+            this.rdbd.UnCheckedColor = System.Drawing.Color.Gray;
+            this.rdbd.UseVisualStyleBackColor = true;
+            // 
+            // rdbc
+            // 
+            this.rdbc.AutoSize = true;
+            this.rdbc.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdbc.ForeColor = System.Drawing.Color.LightGray;
+            this.rdbc.Location = new System.Drawing.Point(26, 164);
+            this.rdbc.MinimumSize = new System.Drawing.Size(0, 21);
+            this.rdbc.Name = "rdbc";
+            this.rdbc.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.rdbc.Size = new System.Drawing.Size(50, 24);
+            this.rdbc.TabIndex = 30;
+            this.rdbc.TabStop = true;
+            this.rdbc.Text = "c";
+            this.rdbc.UnCheckedColor = System.Drawing.Color.Gray;
+            this.rdbc.UseVisualStyleBackColor = true;
+            // 
+            // rdbb
+            // 
+            this.rdbb.AutoSize = true;
+            this.rdbb.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdbb.ForeColor = System.Drawing.Color.LightGray;
+            this.rdbb.Location = new System.Drawing.Point(26, 94);
+            this.rdbb.MinimumSize = new System.Drawing.Size(0, 21);
+            this.rdbb.Name = "rdbb";
+            this.rdbb.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.rdbb.Size = new System.Drawing.Size(50, 24);
+            this.rdbb.TabIndex = 29;
+            this.rdbb.TabStop = true;
+            this.rdbb.Text = "b";
+            this.rdbb.UnCheckedColor = System.Drawing.Color.Gray;
+            this.rdbb.UseVisualStyleBackColor = true;
+            // 
+            // rdba
+            // 
+            this.rdba.AutoSize = true;
+            this.rdba.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rdba.ForeColor = System.Drawing.Color.LightGray;
+            this.rdba.Location = new System.Drawing.Point(26, 29);
+            this.rdba.MinimumSize = new System.Drawing.Size(0, 21);
+            this.rdba.Name = "rdba";
+            this.rdba.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.rdba.Size = new System.Drawing.Size(50, 24);
+            this.rdba.TabIndex = 28;
+            this.rdba.TabStop = true;
+            this.rdba.Text = "a";
+            this.rdba.UnCheckedColor = System.Drawing.Color.Gray;
+            this.rdba.UseVisualStyleBackColor = true;
             // 
             // FormExamenPostulante
             // 
