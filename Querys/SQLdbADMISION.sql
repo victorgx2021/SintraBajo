@@ -269,6 +269,7 @@ BEGIN
 	select DNIpostulante,Calificacion
 		from PRUEBA_POSTULANTE
 		where IdPrueba=@IdPrueba
+		order by Calificacion desc
 END
 go
 -- exec usp_listar_examenes '0001'
